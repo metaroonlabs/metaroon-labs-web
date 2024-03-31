@@ -7,6 +7,7 @@ export function Home() {
         <>
             <div className={"text-white"}>
                 <Services/>
+                <div className={"my-72"}></div>
                 <Showcase/>
             </div>
         </>

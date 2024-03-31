@@ -7,7 +7,7 @@ type SectionTitleProps = {
 export function SectionTitle(props: SectionTitleProps) {
 
     return (
-        <div className={"px-[100px] relative"}>
+        <div className={"px-[100px] relative mb-10"}>
             <div
                 className="text-[200px] text-center font-semibold text-transparent bg-clip-text opacity-[15%] bg-gradient-to-b from-[#FFFFFF] from-20% to-[#131313] to-80%">
                 {props.primaryTitle}
