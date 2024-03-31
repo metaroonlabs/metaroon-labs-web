@@ -8,7 +8,7 @@ export function Hero() {
                 <div className={"relative z-20 flex flex-col justify-center items-center"}>
                     <div className={"flex flex-col justify-end gap-[44px] pt-[238px]"}>
                         <div className={"flex flex-col gap-[36px]"}>
-                            <div className={"text-[70px] font-[700] leading-[70px] text-center"}>
+                            <div className={"text-[70px] font-[700] leading-[70px] text-center text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] from-[41.84%] to-[#131313] to-[99%]"}>
                                 We transform visionary <br/> ideas into reality
                             </div>
                             <div className={"font-[300] text-[20px] leading-[28px] tracking-[0.03em] text-center"}>
@@ -20,7 +20,7 @@ export function Hero() {
                         </div>
                     </div>
                 </div>
-                <div className={"flex gap-[34px] justify-center pb-[60px]"}>
+                <div className={"flex gap-[34px] justify-center items-center pb-[60px] text-[#BBBBBB]"}>
                     Our clients:
                     <div className={"flex h-[26px] w-[573px] justify-between gap-4 place-content-between"}>
                         <img src="/assets/images/hero/logo/airbnb-logo.png" alt="airbnb"
