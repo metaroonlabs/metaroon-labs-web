@@ -7,7 +7,7 @@ import {Home} from "@/pages/Home.tsx";
 function App() {
 
   return (
-      <div className={"pt-[100px]"}>
+      <div>
           <NavigationBar/>
           <BrowserRouter>
               <Routes>
