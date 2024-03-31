@@ -9,13 +9,13 @@ export function Home() {
         <>
             <div className={"text-white"}>
                 <Hero/>
-                <div className={"my-72"}></div>
+                <div className={"my-32 md:my-72"}></div>
                 <Paragraph/>
-                <div className={"my-72"}></div>
+                <div className={"my-32 md:my-72"}></div>
                 <Services/>
-                <div className={"my-72"}></div>
+                <div className={"my-32 md:my-72"}></div>
                 <Showcase/>
-                <div className={"my-72"}></div>
+                <div className={"my-32 md:my-72"}></div>
             </div>
         </>
     )
