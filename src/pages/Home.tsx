@@ -7,7 +7,7 @@ export function Home() {
         <>
             <div className={"text-white"}>
                 <Hero/>
-                <Services/>
+                <Services/>                
             </div>
         </>
     )
