@@ -13,7 +13,7 @@ const AnimatedLine: React.FC<AnimatedLineProps> = ({text}) => {
     return (
         <p
             ref={ref}
-            className={`transition-opacity duration-1000 ${inView ? 'opacity-100' : 'opacity-0'} transform translate-y-5 ${inView ? 'translate-y-0' : ''} text-center text-white text-[50px]`}
+            className={`transition-opacity duration-1000 ${inView ? 'opacity-100' : 'opacity-0'} transform translate-y-5 ${inView ? 'translate-y-0' : ''} text-center text-white text-[18px] sm:text-[25px] md:text-[35px] lg:text-[50px]`}
         >
             {text}
         </p>
@@ -22,7 +22,8 @@ const AnimatedLine: React.FC<AnimatedLineProps> = ({text}) => {
 
 export function Paragraph() {
     const lines = [
-        "Metaroon Labs help to make your dream come true with",
+        "Metaroon Labs help to make",
+        "your dream come true with",
         "software solutions. We are",
         " skilled with multiple",
         "disciplines from software",
@@ -32,7 +33,7 @@ export function Paragraph() {
     ];
 
     return (
-        <div className="px-[100px] my-72">
+        <div className="px-[25px] lg:px-[100px] my-72">
             <div className="max-w-[1000px] mx-auto">
                 {lines.map((line, index) => (
                     <AnimatedLine key={index} text={line}/>
