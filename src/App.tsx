@@ -1,13 +1,11 @@
 import './App.css'
-import {Button} from "@/components/ui/button.tsx";
+import {NavigationBar} from "@/components/NavigationBar.tsx";
 
 function App() {
 
   return (
       <>
-          <div>
-              <Button>Click me</Button>
-          </div>
+          <NavigationBar/>
       </>
   )
 }
