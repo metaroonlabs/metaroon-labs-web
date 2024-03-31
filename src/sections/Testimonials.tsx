@@ -1,5 +1,5 @@
 import { SectionTitle } from "@/components/SectionTitle.tsx";
-import { TestimonialCard } from "../components/ui/TestimonialCard";
+import { TestimonialCard } from "../components/ui/testimonial-card";
 
 
 export function Lab() {

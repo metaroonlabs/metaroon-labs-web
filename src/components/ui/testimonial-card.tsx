@@ -1,4 +1,3 @@
-
 import avatar from "../../assets/testimonials/avatar.png"
 
 type TestimonialCardProps = {

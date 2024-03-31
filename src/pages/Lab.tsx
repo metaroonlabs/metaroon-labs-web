@@ -1,7 +1,8 @@
 import {SectionTitle} from "@/components/SectionTitle.tsx";
 import {PortfolioCard} from "@/components/PortfolioCard.tsx";
 import {ServicesCard} from "@/ServicesCard.tsx";
-import { TestimonialCard } from "@/components/ui/TestimonialCard";
+import { TestimonialCard } from "@/components/ui/testimonial-card";
+import { VisionCard } from "@/components/ui/OurVisionCard";
 
 export function Lab() {
 
@@ -51,6 +52,11 @@ export function Lab() {
                 {/* Large card
                 <TestimonialCard testimonial={"“Lorem ipsum dolor sit amet consectetur. Purus arcu curabitur rhoncus vitae felis metus in semper ut. Pretium maecenas nisl amet sapien mi. Eu dignissim fermentum urna iaculis dictum adipiscing in integer. Nisl ut a lectus commodo non viverra sodales nunc in. Ut ultricies sed proin in tellus ut aliquam cursus urna. Ut viverra sit iaculis dolor magna id sagittis sodales. Morbi nisl odio id eu felis nunc. Pellentesque ac integer ut venenatis. Sed lobortis enim ultrices ultricies ac nisl nullam commodo risus. Urna placerat egestas lectus eget tristique in tempor. Placerat felis sapien blandit vitae dui facilisi sed. Pulvinar amet purus lobortis rhoncus tempus id amet. Cursus risus ultrices orci sit. Volutpat aenean amet nisi dui nec pellentesque mauris habitant faucibus. Maecenas nisl tempor neque sed. Volutpat hendrerit egestas placerat.”"} username={"Vytas Butkevicius"} designation={"Founder at Outframe"} imgUrl={"/assets/testimonial/avatar.jpg"} largeCard={true} /> */}
             </div> 
+
+            <SectionTitle primaryTitle={"Our Vision"} secondaryTitle={"About Us"}/>
+            <div >
+                <VisionCard slogan={"At Metaroon Labs, we are dedicated to delivering top-notch tech solutions that meet the unique needs of our clients. Our team of experienced professionals is passionate about utilizing the latest and most effective technology to create innovative and practical solutions. We are committed to excellence, collaboration, and continuous learning to provide the highest quality services to our clients."}/>                               
+            </div>            
         </>
     )
 }
