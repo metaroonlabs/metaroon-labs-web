@@ -8,7 +8,6 @@ type AnimatedLineProps = {
 const AnimatedLine: React.FC<AnimatedLineProps> = ({text}) => {
     const {ref, inView} = useInView({
         threshold: 0.5,
-        triggerOnce: true,
     });
 
     return (
