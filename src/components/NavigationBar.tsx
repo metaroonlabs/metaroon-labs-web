@@ -7,7 +7,8 @@ export function NavigationBar() {
 
     return (
         <>
-            <NavigationMenu className={"min-w-full h-[80px] justify-between px-[100px] fixed top-0"}>
+            <NavigationMenu
+                className={"min-w-full h-[80px] backdrop-blur bg-[#131313]/75 justify-between px-[100px] fixed top-0"}>
                 <Link>
                     <img src="/assets/images/logo/logo.png" alt="metaroon-logo" className={"w-[125px] cursor-pointer"}/>
                 </Link>
