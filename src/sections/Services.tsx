@@ -6,7 +6,8 @@ export function Services() {
     return (
         <>
             <SectionTitle primaryTitle={"Services"} secondaryTitle={"What We do"}/>
-            <div className={"flex flex-wrap gap-10 px-[100px] mt-10"}>
+            <div
+                className={"grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 lg:gap-10 px-[25px] lg:px-[100px] mt-10"}>
                 <ServicesCard imgUrl={"/assets/images/services/web3.svg"} title={`Web 3.0`}
                               secondTitle={"Product and Services"}/>
                 <ServicesCard imgUrl={"/assets/images/services/FullStack.svg"} title={"Web"}

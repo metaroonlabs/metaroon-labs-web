@@ -13,10 +13,11 @@ export function PortfolioCard(props: PortfolioCardProps) {
         <>
             <div
                 className={`border-2 border-[#2C2C2C] rounded-[10px] text-center overflow-hidden w-full flex flex-col justify-between h-full`}>
-                <div className={"w-full px-10 pt-10 pb-5"}>
+                <div className={"w-full sm:px-5 xl:px-10 pt-10 pb-5"}>
                     <div
-                        className={`font-semibold ${props.secondaryCard ? "text-[34px]" : "text-[40px]"}`}>{props.title}</div>
-                    <div className={`${props.secondaryCard ? "text-[16px]" : "text-[20px]"} mb-8`}>{props.slogan}</div>
+                        className={`font-semibold ${props.secondaryCard ? "text-[16px] sm:text-[22px] xl:text-[34px]" : "text-[28px] lg:text-[40px]"}`}>{props.title}</div>
+                    <div
+                        className={`${props.secondaryCard ? "text-[12px] sm:text-[13px] xl:text-[16px]" : "text-[14px] lg:text-[20px]"} mb-8`}>{props.slogan}</div>
                     <div className={"flex gap-5 justify-center"}>
                         <div
                             className={"p-[1px] bg-gradient-to-b from-[#FFFFFF] to-[#999999] flex justify-center items-center rounded-[5px]"}>
