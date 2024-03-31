@@ -8,10 +8,10 @@ export function Home() {
     return (
         <>
             <div className={"text-white"}>
+                <Hero/>
                 <div className={"my-72"}></div>
                 <Paragraph/>
                 <div className={"my-72"}></div>
-                <Hero/>
                 <Services/>
                 <div className={"my-72"}></div>
                 <Showcase/>
