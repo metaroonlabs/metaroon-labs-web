@@ -6,14 +6,14 @@ export function Lab() {
     return (
         <>
             <SectionTitle primaryTitle={"Lorem Ipsum"} secondaryTitle={"Lorem ipsum lorem"} logoInclude={true}/>
-            <div className={"flex justify-center gap-10 px-[100px]"}>
+            <div className={"grid grid-cols-1 md:grid-cols-2 gap-10 px-[100px]"}>
                 <PortfolioCard title={"DeFi Kingdoms"} slogan={"Forge Fantasy, Finance Future"}
                                imgUrl={"/assets/images/portfolio/dfk.jpg"} tagOneTitle={"Gaming"}
                                tagTwoTitle={"Web 3.0"}/>
                 <PortfolioCard title={"Draftables"} slogan={"The Ultimate Web3.0 Football Emulator"}
                                imgUrl={"/assets/images/portfolio/draftables.jpg"} tagOneTitle={"Gaming"}/>
             </div>
-            <div className={"flex justify-center gap-10 px-[100px] mt-10"}>
+            <div className={"grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-10 px-[100px] mt-10"}>
                 <PortfolioCard title={"Roulettopia"} slogan={"Lorem ipsum dolor sit"}
                                imgUrl={"/assets/images/portfolio/roulettopia.jpg"} tagOneTitle={"Web 3.0"}
                                secondaryCard={true}/>
