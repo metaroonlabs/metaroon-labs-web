@@ -6,8 +6,8 @@ export function Showcase() {
     return (
         <>
             <SectionTitle primaryTitle={"Showcase"} secondaryTitle={"Made in metaroon"} logoInclude={true}/>
-            <div className={"px-100"}>
-                <div className={"grid grid-cols-1 md:grid-cols-2 gap-10 px-[100px]"}>
+            <div className={"px-[25px] lg:px-[100px]"}>
+                <div className={"grid grid-cols-1 sm:grid-cols-2 gap-10"}>
                     <PortfolioCard title={"DeFi Kingdoms"} slogan={"Forge Fantasy, Finance Future"}
                                    imgUrl={"/assets/images/portfolio/dfk.jpg"} tagOneTitle={"Gaming"}
                                    tagTwoTitle={"Web 3.0"}/>
@@ -24,7 +24,7 @@ export function Showcase() {
                     <PortfolioCard title={"Shop Assist"} slogan={"By Gamers, For Gamers"}
                                    imgUrl={"/assets/images/portfolio/shop_assist.jpg"} tagOneTitle={"Web"}/>
                 </div>
-                <div className={"grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-10 px-[100px] mt-10"}>
+                <div className={"grid grid-cols-2 sm:grid-cols-3 gap-5 sm:gap-10 mt-10"}>
                     <PortfolioCard title={"Roulettopia"} slogan={"Lorem ipsum dolor sit"}
                                    imgUrl={"/assets/images/portfolio/roulettopia.jpg"} tagOneTitle={"Web 3.0"}
                                    secondaryCard={true}/>
@@ -35,9 +35,10 @@ export function Showcase() {
                                    imgUrl={"/assets/images/portfolio/sport-aircraft.jpg"} tagOneTitle={"Mobile"}
                                    secondaryCard={true}/>
                     <PortfolioCard title={"SkillForge"} slogan={"Empowering Your Workforce"}
-                                   imgUrl={"/assets/images/portfolio/scooby.jpg"} tagOneTitle={"Mobile"}/>
+                                   imgUrl={"/assets/images/portfolio/skillforge.jpg"} tagOneTitle={"Mobile"}
+                                   secondaryCard={true}/>
                     <PortfolioCard title={"ChianWork"} slogan={"Lorem ipsum dolor sit amet consectetur. Tortor nulla."}
-                                   imgUrl={"/assets/images/portfolio/sport-aircraft.jpg"} tagOneTitle={"Web 3.0"}
+                                   imgUrl={"/assets/images/portfolio/chain-work.jpg"} tagOneTitle={"Web 3.0"}
                                    secondaryCard={true}/>
                 </div>
             </div>
