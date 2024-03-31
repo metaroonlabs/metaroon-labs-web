@@ -12,8 +12,8 @@ export function PortfolioCard(props: PortfolioCardProps) {
     return (
         <>
             <div
-                className={`border-2 border-[#2C2C2C] rounded-[10px] text-center overflow-hidden ${props.secondaryCard ? "w-[33%]" : "w-[50%]"}`}>
-                <div className={"w-full p-10"}>
+                className={`border-2 border-[#2C2C2C] rounded-[10px] text-center overflow-hidden w-full flex flex-col justify-between h-full`}>
+                <div className={"w-full px-10 pt-10 pb-5"}>
                     <div
                         className={`font-semibold ${props.secondaryCard ? "text-[34px]" : "text-[40px]"}`}>{props.title}</div>
                     <div className={`${props.secondaryCard ? "text-[16px]" : "text-[20px]"} mb-8`}>{props.slogan}</div>
@@ -37,7 +37,7 @@ export function PortfolioCard(props: PortfolioCardProps) {
 
                     </div>
                 </div>
-                <div className={"w-full h-full"}>
+                <div className={"w-full"}>
                     <img src={props.imgUrl} alt="portfolio-img" className={"w-full"}/>
                 </div>
             </div>
