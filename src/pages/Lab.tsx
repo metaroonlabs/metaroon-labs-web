@@ -1,5 +1,6 @@
 import {SectionTitle} from "@/components/SectionTitle.tsx";
 import {PortfolioCard} from "@/components/PortfolioCard.tsx";
+import {ServicesCard} from "@/ServicesCard.tsx";
 
 export function Lab() {
 
@@ -23,6 +24,21 @@ export function Lab() {
                 <PortfolioCard title={"Sport Aircraft"} slogan={"The Ultimate Web3.0 Football Emulator"}
                                imgUrl={"/assets/images/portfolio/sport-aircraft.jpg"} tagOneTitle={"Mobile"}
                                secondaryCard={true}/>
+            </div>
+            <div className={"flex flex-wrap gap-10 px-[100px] mt-10"}>
+                <ServicesCard imgUrl={"/assets/images/services/web3.svg"} title={`Web 3.0`}
+                              secondTitle={"Product and Services"}/>
+                <ServicesCard imgUrl={"/assets/images/services/FullStack.svg"} title={"Web"}
+                              secondTitle={"Development"}/>
+                <ServicesCard imgUrl={"/assets/images/services/Cloud.svg"} title={"Cloud Solutions"}/>
+                <ServicesCard imgUrl={"/assets/images/services/Mobile.svg"} title={"Mobile"}
+                              secondTitle={"Applications"}/>
+                <ServicesCard imgUrl={"/assets/images/services/AI.svg"} title={"AI and ML"}
+                              secondTitle={"Innovations"}/>
+                <ServicesCard imgUrl={"/assets/images/services/AR.svg"} title={"AR / VR Interactive"}
+                              secondTitle={"Solutions"}/>
+                <ServicesCard imgUrl={"/assets/images/services/game.png"} title={"Game Design"}
+                              secondTitle={"& development"}/>
             </div>
         </>
     )
