@@ -10,7 +10,7 @@ export function Home() {
 
     return (
         <>
-            <div className={"text-white"}>
+            <div className={"text-white 2xl:max-w-[1420px] mx-auto"}>
                 <Hero/>
                 <div className={"my-32 md:my-72"}></div>
                 <Paragraph/>
