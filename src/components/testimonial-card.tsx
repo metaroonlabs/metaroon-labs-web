@@ -1,4 +1,4 @@
-import avatar from "../../assets/testimonials/avatar.png"
+import avatar from "../../public/assets/images/testimonials/avatar.png"
 
 type TestimonialCardProps = {
     testimonial: string;
