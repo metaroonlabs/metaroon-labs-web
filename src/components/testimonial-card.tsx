@@ -12,8 +12,9 @@ export function TestimonialCard(props: TestimonialCardProps) {
     return (
         <>
             {props.largeCard ?
-                <div className="max-w-[550px]  max-h-[440px] rounded-xl border-2 border-[#2C2C2C] bg-[#151515]">
-                    <div className="p-10 font-extralight text-[14px] mb-5">{props.testimonial}</div>
+                <div
+                    className="w-full h-full rounded-xl border-2 border-[#2C2C2C] bg-[#151515] flex flex-col justify-between">
+                    <div className="p-10 font-extralight text-[14px]">{props.testimonial}</div>
                     <div className="flex items-center ml-10 pb-4">
                         <img
                             src={avatar}
@@ -29,7 +30,7 @@ export function TestimonialCard(props: TestimonialCardProps) {
                     </div>
                 </div>
                 :
-                <div className="max-w-[660px] max-h-[205px] rounded-xl border-2 border-[#2C2C2C] bg-[#151515]">
+                <div className="w-full rounded-xl border-2 border-[#2C2C2C] bg-[#151515]">
                     <div className="font-extralight text-[14px] p-10">{props.testimonial}</div>
                     <div className="flex items-center ml-10 pb-4">
                         <img
