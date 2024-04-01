@@ -12,26 +12,27 @@ export function Home() {
 
     return (
         <>
-            <div className={"text-white 2xl:max-w-[1420px] mx-auto"}>
+            <div>
                 <Hero/>
                 <div className={"my-32 md:my-72"}></div>
-                <Paragraph/>
-                <div className={"my-32 md:my-72"}></div>
-                <Services/>
-                <div className={"my-32 md:my-72"}></div>
-                <Showcase/>
-                <div className={"my-32 md:my-72"}></div>
-                <Testimonials/>
-                <div className={"my-32 md:m-72"}></div>
-                <DevTools/>
-                <div className={"my-32 md:m-72"}></div>
-                <AboutUs/>
-                <div className={"my-32 md:m-72"}></div>
-                <Contact/>
-                <div className={"my-32 md:m-72"}></div>
-                <Footer/>
-                <div className={"my-10"}></div>
-
+                <div className={"text-white 2xl:max-w-[1420px] mx-auto"}>
+                    <Paragraph/>
+                    <div className={"my-32 md:my-72"}></div>
+                    <Services/>
+                    <div className={"my-32 md:my-72"}></div>
+                    <Showcase/>
+                    <div className={"my-32 md:my-72"}></div>
+                    <Testimonials/>
+                    <div className={"my-32 md:m-72"}></div>
+                    <DevTools/>
+                    <div className={"my-32 md:m-72"}></div>
+                    <AboutUs/>
+                    <div className={"my-32 md:m-72"}></div>
+                    <Contact/>
+                    <div className={"my-32 md:m-72"}></div>
+                    <Footer/>
+                    <div className={"my-10"}></div>
+                </div>
             </div>
         </>
     )
