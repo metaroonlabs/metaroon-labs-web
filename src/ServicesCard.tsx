@@ -8,7 +8,7 @@ export function ServicesCard(props: ServicesCardProps) {
 
     return (
         <div
-            className={"max-w-[236px] w-full h-[200px] lg:h-[260px] bg-sky-500 rounded-[10px] overflow-hidden bg-gradient-to-br from-[#9D9D9D] via-[#202020] to-[#202020] p-[2px] group"}>
+            className={"max-w-[236px] w-full h-[200px] lg:h-[260px] rounded-[10px] overflow-hidden bg-gradient-to-br from-[#9D9D9D] via-[#202020] to-[#202020] p-[2px] group"}>
             <div
                 className={"w-full h-full bg-[#131313] rounded-[10px] p-3 lg:p-5 flex flex-col justify-between items-center"}>
                 <div className={"relative w-[220px] h-[120px] flex justify-center items-center"}>
