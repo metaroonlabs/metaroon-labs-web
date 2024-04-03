@@ -4,6 +4,10 @@ import {FiChevronRight} from "react-icons/fi";
 import {Button} from "@/components/ui/button.tsx";
 
 export function AboutUs() {
+    const handleBookCallBtn = () => {
+        window.location.href = 'tel:+94775555525';
+    };
+
 
     return (
         <div className={"px-[25px] lg:px-[100px]"} id={"about"}>
@@ -20,7 +24,8 @@ export function AboutUs() {
                         <div className={"mb-10 relative z-10 text-[20px] md:text-[28px] lg:text-[50px]"}>Book a call
                             with our <br/>co-founder
                         </div>
-                        <Button className={"w-[150px] my-2 relative z-10"}>Book a call <FiChevronRight
+                        <Button onClick={handleBookCallBtn} className={"w-[150px] my-2 relative z-10"}>Book a
+                            call <FiChevronRight
                             size={18}/></Button>
                     </div>
                 </div>

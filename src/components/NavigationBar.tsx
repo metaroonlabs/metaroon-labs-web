@@ -6,6 +6,9 @@ import {Sheet, SheetContent, SheetTrigger} from "@/components/ui/sheet.tsx";
 import {MenuIcon} from "lucide-react";
 
 export function NavigationBar() {
+    const handleBookCallBtn = () => {
+        window.location.href = 'tel:+94775555525';
+    };
 
     return (
         <>
@@ -38,7 +41,8 @@ export function NavigationBar() {
                             </NavigationMenuLink>
                         </Link>
                     </div>
-                    <Button className={"hidden lg:flex"}>Book a call <FiChevronRight size={18}/></Button>
+                    <Button onClick={handleBookCallBtn} className={"hidden lg:flex"}>Book a call <FiChevronRight
+                        size={18}/></Button>
                 </div>
                 <Sheet>
                     <SheetTrigger asChild>
@@ -64,7 +68,8 @@ export function NavigationBar() {
                             <Link className="flex w-full items-center py-2 text-lg" href="#contact">
                                 Contact
                             </Link>
-                            <Button className={"w-[150px] my-2"}>Book a call <FiChevronRight size={18}/></Button>
+                            <Button onClick={handleBookCallBtn} className={"w-[150px] my-2"}>Book a call <FiChevronRight
+                                size={18}/></Button>
                         </div>
                     </SheetContent>
                 </Sheet>

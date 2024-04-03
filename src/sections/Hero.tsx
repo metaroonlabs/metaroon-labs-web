@@ -2,6 +2,11 @@ import {FiChevronRight} from "react-icons/fi";
 import {Button} from "@/components/ui/button.tsx";
 
 export function Hero() {
+    const handleBookCallBtn = () => {
+        window.location.href = 'tel:+94775555525';
+    };
+
+
     return (
         <div className={"relative min-h-[100vh] overflow-y-hidden"}>
             <div className={'min-h-screen flex flex-col 2xl:max-w-[1420px] mx-auto'}>
@@ -16,7 +21,8 @@ export function Hero() {
                             </div>
                         </div>
                         <div className={"flex justify-center"}>
-                            <Button className={"h-[46px] w-[200px]"}>Book a call <FiChevronRight size={18}/></Button>
+                            <Button onClick={handleBookCallBtn} className={"h-[46px] w-[200px]"}>Book a
+                                call <FiChevronRight size={18}/></Button>
                         </div>
                     </div>
                 </div>
