@@ -22,17 +22,15 @@ export function Hero() {
                 </div>
                 <div className={"flex flex-col md:flex-row gap-[24px] md:gap-[34px] justify-center items-center pb-[60px] text-[#BBBBBB] px-[25px] lg:px-[100px]"}>
                     Our clients:
-                    <div className={"flex flex-wrap justify-center items-center gap-4 place-content-between"}>
-                        <img src="/assets/images/hero/logo/airbnb-logo.png" alt="airbnb"
-                             className={"w-[69px] h-[26px]"}/>
-                        <img src="/assets/images/hero/logo/Company%20logo.png" alt="company"
-                             className={"w-[101px] h-[26px]"}/>
-                        <img src="/assets/images/hero/logo/asana-logo.png" alt="asana"
-                             className={"w-[75.63px] h-[14.9px]"}/>
-                        <img src="/assets/images/hero/logo/Group%202149.png" alt="group"
-                             className={"w-[102.24px] h-[13.98px]"}/>
-                        <img src="/assets/images/hero/logo/Press%20logo.png" alt="press"
-                             className={"w-[88px] h-[21px]"}/>
+                    <div className={"flex flex-wrap justify-center items-center gap-8 place-content-between"}>
+                        <img src="/assets/images/hero/logo/draftables.png" alt="draft-labs"
+                             className={"w-[70px]"}/>
+                        <img src="/assets/images/hero/logo/wisdomgaming_logo%201.png" alt="wisdom"
+                             className={"w-[40px]"}/>
+                        <img src="/assets/images/hero/logo/the_math_team_io_logo%201.png" alt="the-math-team"
+                             className={"w-[40px]"}/>
+                        <img src="/assets/images/hero/logo/sport.png" alt="sport-aircraft-seats"
+                             className={"w-[100px]"}/>
                     </div>
                 </div>
             </div>
