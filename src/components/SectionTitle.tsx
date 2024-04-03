@@ -9,7 +9,7 @@ export function SectionTitle(props: SectionTitleProps) {
     return (
         <div className={"px-[25px] lg:px-[100px] relative mb-10"}>
             <div
-                className="text-[45px] sm:text-[70px] md:text-[85px] lg:text-[115px] xl:text-[155px] 2xl:text-[190px] text-center font-semibold text-transparent bg-clip-text opacity-[15%] bg-gradient-to-b from-[#FFFFFF] from-20% to-[#131313] to-80%">
+                className="text-[45px] sm:text-[70px] md:text-[85px] lg:text-[115px] xl:text-[155px] 2xl:text-[170px] text-nowrap text-center font-semibold text-transparent bg-clip-text opacity-[15%] bg-gradient-to-b from-[#FFFFFF] from-20% to-[#131313] to-80%">
                 {props.primaryTitle}
             </div>
             <div className={"absolute left-0 top-1 sm:top-2 md:top-4 xl:top-8 2xl:top-12 w-full flex justify-center"}>
