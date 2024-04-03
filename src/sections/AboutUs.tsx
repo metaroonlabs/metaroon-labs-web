@@ -6,7 +6,8 @@ import {Button} from "@/components/ui/button.tsx";
 export function AboutUs() {
 
     return (
-        <div className={"px-[25px] lg:px-[100px]"}>
+        <div className={"px-[25px] lg:px-[100px]"} id={"about"}>
+            <div className={"py-24"}></div>
             <SectionTitle primaryTitle={"Our Vision"} secondaryTitle={"About Us"} logoInclude={true}/>
             <OurVisionCard/>
             <div className={"mt-10"}>

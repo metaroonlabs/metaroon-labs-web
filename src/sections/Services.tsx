@@ -4,7 +4,8 @@ import {SectionTitle} from "@/components/SectionTitle.tsx";
 export function Services() {
 
     return (
-        <>
+        <div id={"services"}>
+            <div className={"py-24"}></div>
             <SectionTitle primaryTitle={"Services"} secondaryTitle={"What We do"}/>
             <div
                 className={"grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 lg:gap-10 px-[25px] lg:px-[100px] mt-10"}>
@@ -22,6 +23,6 @@ export function Services() {
                 <ServicesCard imgUrl={"/assets/images/services/game.png"} title={"Game Design"}
                               secondTitle={"& development"}/>
             </div>
-        </>
+        </div>
     )
 }

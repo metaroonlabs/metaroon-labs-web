@@ -17,22 +17,22 @@ export function NavigationBar() {
                              className={"w-[125px] cursor-pointer"}/>
                     </Link>
                     <div className={"hidden gap-[30px] lg:flex justify-center"}>
-                        <Link href="/">
+                        <Link href="#projects">
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                 Projects
                             </NavigationMenuLink>
                         </Link>
-                        <Link href="/">
+                        <Link href="#services">
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                 Services
                             </NavigationMenuLink>
                         </Link>
-                        <Link href="/">
+                        <Link href="#about">
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                 About
                             </NavigationMenuLink>
                         </Link>
-                        <Link href="/">
+                        <Link href="#contact">
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                 Contact
                             </NavigationMenuLink>
@@ -52,16 +52,16 @@ export function NavigationBar() {
                                 <img src="/assets/images/logo/logo.png" alt="metaroon-logo"
                                      className={"w-[125px] cursor-pointer mb-10"}/>
                             </Link>
-                            <Link className="flex w-full items-center py-2 text-lg" href="#">
+                            <Link className="flex w-full items-center py-2 text-lg" href="#projects">
                                 Projects
                             </Link>
-                            <Link className="flex w-full items-center py-2 text-lg" href="#">
+                            <Link className="flex w-full items-center py-2 text-lg" href="#services">
                                 Services
                             </Link>
-                            <Link className="flex w-full items-center py-2 text-lg" href="#">
+                            <Link className="flex w-full items-center py-2 text-lg" href="#about">
                                 About
                             </Link>
-                            <Link className="flex w-full items-center py-2 text-lg" href="#">
+                            <Link className="flex w-full items-center py-2 text-lg" href="#contact">
                                 Contact
                             </Link>
                             <Button className={"w-[150px] my-2"}>Book a call <FiChevronRight size={18}/></Button>
