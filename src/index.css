@@ -86,3 +86,16 @@ body {
         @apply bg-background text-foreground;
     }
 }
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.fade-in-out {
+    animation: fadeInOut 2s infinite;
+}
