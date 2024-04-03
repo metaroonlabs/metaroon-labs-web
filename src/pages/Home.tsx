@@ -17,19 +17,18 @@ export function Home() {
                 <div className={"my-32 md:my-72"}></div>
                 <div className={"text-white 2xl:max-w-[1420px] mx-auto"}>
                     <Paragraph/>
-                    <div className={"my-32 md:my-72"}></div>
+                    <div className={"my-24 md:my-48"}></div>
                     <Services/>
-                    <div className={"my-32 md:my-72"}></div>
+                    <div className={"my-24 md:my-48"}></div>
                     <Showcase/>
-                    <div className={"my-32 md:my-72"}></div>
+                    <div className={"my-24 md:my-48"}></div>
                     <Testimonials/>
-                    <div className={"my-32 md:m-72"}></div>
+                    <div className={"my-24 md:my-48"}></div>
                     <DevTools/>
-                    <div className={"my-32 md:m-72"}></div>
+                    <div className={"my-24 md:my-48"}></div>
                     <AboutUs/>
-                    <div className={"my-32 md:m-72"}></div>
+                    <div className={"my-24 md:my-48"}></div>
                     <Contact/>
-                    <div className={"my-32 md:m-72"}></div>
                     <Footer/>
                     <div className={"my-10"}></div>
                 </div>
