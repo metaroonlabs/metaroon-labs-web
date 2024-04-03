@@ -43,7 +43,7 @@ export function Contact() {
                                  blackIconUrl={'/assets/images/contact/linkedln-black.png'} title={'Follow us'}
                                  secondTitle={'on LinkedIn'} url={"https://www.linkedin.com/company/metaroon-labs/"}/>
                     <ContactCard whiteIconUrl={'/assets/images/contact/telegram.png'}
-                                 blackIconUrl={'/assets/images/contact/telegram-black.png'} title={'Join us'}
+                                 blackIconUrl={'/assets/images/contact/telegram-black.png'} title={'Connect us'}
                                  secondTitle={'on Telegram'} url="tg://resolve?domain=@paragonthedev"/>
                 </div>
             </div>

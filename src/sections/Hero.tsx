@@ -2,10 +2,7 @@ import {FiChevronRight} from "react-icons/fi";
 import {Button} from "@/components/ui/button.tsx";
 
 export function Hero() {
-    const handleBookCallBtn = () => {
-        window.location.href = 'tel:+94775555525';
-    };
-
+    const calendlyUrl = 'https://calendly.com/bathiyaw';
 
     return (
         <div className={"relative min-h-[100vh] overflow-y-hidden"}>
@@ -21,7 +18,8 @@ export function Hero() {
                             </div>
                         </div>
                         <div className={"flex justify-center"}>
-                            <Button onClick={handleBookCallBtn} className={"h-[46px] w-[200px]"}>Book a
+                            <Button onClick={() => window.open(calendlyUrl, '_blank')} className={"h-[46px] w-[200px]"}>Book
+                                a
                                 call <FiChevronRight size={18}/></Button>
                         </div>
                     </div>

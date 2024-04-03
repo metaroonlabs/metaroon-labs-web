@@ -6,9 +6,7 @@ import {Sheet, SheetContent, SheetTrigger} from "@/components/ui/sheet.tsx";
 import {MenuIcon} from "lucide-react";
 
 export function NavigationBar() {
-    const handleBookCallBtn = () => {
-        window.location.href = 'tel:+94775555525';
-    };
+    const calendlyUrl = 'https://calendly.com/bathiyaw';
 
     return (
         <>
@@ -41,7 +39,8 @@ export function NavigationBar() {
                             </NavigationMenuLink>
                         </Link>
                     </div>
-                    <Button onClick={handleBookCallBtn} className={"hidden lg:flex"}>Book a call <FiChevronRight
+                    <Button onClick={() => window.open(calendlyUrl, '_blank')} className={"hidden lg:flex"}>Book a
+                        call <FiChevronRight
                         size={18}/></Button>
                 </div>
                 <Sheet>
@@ -68,7 +67,8 @@ export function NavigationBar() {
                             <Link className="flex w-full items-center py-2 text-lg" href="#contact">
                                 Contact
                             </Link>
-                            <Button onClick={handleBookCallBtn} className={"w-[150px] my-2"}>Book a call <FiChevronRight
+                            <Button onClick={() => window.open(calendlyUrl, '_blank')} className={"w-[150px] my-2"}>Book
+                                a call <FiChevronRight
                                 size={18}/></Button>
                         </div>
                     </SheetContent>
