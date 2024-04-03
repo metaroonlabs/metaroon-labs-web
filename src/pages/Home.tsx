@@ -16,9 +16,9 @@ export function Home() {
                 <Hero/>
                 <div className={"my-32 md:my-72"}></div>
                 <div className={"text-white 2xl:max-w-[1420px] mx-auto"}>
-                    <Paragraph/>
-                    <div className={"my-24 md:my-48"}></div>
                     <Services/>
+                    <div className={"my-24 md:my-48"}></div>
+                    <Paragraph/>
                     <div className={"my-24 md:my-48"}></div>
                     <Showcase/>
                     <div className={"my-24 md:my-48"}></div>
