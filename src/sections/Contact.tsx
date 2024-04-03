@@ -9,7 +9,7 @@ export function Contact() {
     };
 
     return (
-        <div className={"lg:p-[100px] p-[25px] h-full"}>
+        <div id={"contact"} className={"lg:p-[100px] p-[25px] h-full"}>
             <div
                 className={'flex flex-col md:flex-row items-center md:items-start justify-between gap-[50px] md:gap-0 relative'}>
                 <div>
@@ -35,16 +35,16 @@ export function Contact() {
                 <div className={'grid grid-cols-2 grid-flow-row gap-[20px]'}>
                     <ContactCard whiteIconUrl={'/assets/images/contact/phone.png'}
                                  blackIconUrl={'/assets/images/contact/phone-black.png'} title={'Speak on'}
-                                 secondTitle={'the Phone'}/>
+                                 secondTitle={'the Phone'} url="tel:+94775555525"/>
                     <ContactCard whiteIconUrl={'/assets/images/contact/mail-03.png'}
                                  blackIconUrl={'/assets/images/contact/mail-black.png'} title={'Send us'}
-                                 secondTitle={'an email'}/>
+                                 secondTitle={'an email'} url="mailto:contact@metaroonlabs.com"/>
                     <ContactCard whiteIconUrl={'/assets/images/contact/linkedln.png'}
                                  blackIconUrl={'/assets/images/contact/linkedln-black.png'} title={'Follow us'}
-                                 secondTitle={'on LinkedIn'}/>
+                                 secondTitle={'on LinkedIn'} url={"https://www.linkedin.com/company/metaroon-labs/"}/>
                     <ContactCard whiteIconUrl={'/assets/images/contact/telegram.png'}
                                  blackIconUrl={'/assets/images/contact/telegram-black.png'} title={'Join us'}
-                                 secondTitle={'on Telegram'}/>
+                                 secondTitle={'on Telegram'} url="tg://resolve?domain=@paragonthedev"/>
                 </div>
             </div>
         </div>
