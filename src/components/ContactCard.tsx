@@ -9,7 +9,7 @@ type ContactCardProps = {
 export function ContactCard(props: ContactCardProps) {
     return (
         <div
-            className={"group flex flex-col justify-between border-[1px] border-[#4A4A4A] rounded-[10px] lg:w-[300px] lg:h-[400px] md:w-[240px] md:h-[320px] sm:w-[210px] sm:h-[280px] w-[140px] h-[200px] p-[18px] sm:p-[25px] hover:bg-[#FFFFFF] hover:text-black cursor-pointer duration-500"}>
+            className={"group flex flex-col justify-between border-[1px] border-[#4A4A4A] rounded-[10px] xl:w-[300px] xl:h-[400px] md:w-[240px] md:h-[320px] sm:w-[210px] sm:h-[280px] w-[140px] h-[200px] p-[18px] sm:p-[25px] hover:bg-[#FFFFFF] hover:text-black cursor-pointer duration-500"}>
             <div
                 className={"flex w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] md:w-[70px] md:h-[70px] border-[1px] border-[#4A4A4A] rounded-full justify-center items-center group-hover:border-[#C7C7C7] duration-500"}>
                 <img className={"w-[20px] h-[20px] sm:w-[25px] sm:h-[25px] md:w-[35px] md:h-[35px] absolute group-hover:opacity-0 transition-opacity duration-500"} src={props.whiteIconUrl} alt="contact-img"/>
