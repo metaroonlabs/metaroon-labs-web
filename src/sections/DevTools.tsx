@@ -5,7 +5,7 @@ import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from "@/co
 export function DevTools() {
     return (
         <div>
-            <SectionTitle primaryTitle={"Technologys"} secondaryTitle={"Devtool"}/>
+            <SectionTitle primaryTitle={"Technologies"} secondaryTitle={"Devtool"}/>
             <div className={"hidden md:flex"}>
                 <div
                     className={"grid md:grid-cols-6 lg:grid-cols-8 gap-[5px] mx-[25px] lg:mx-[100px] text-[14px] font-[400] leading-[17.64px] text-[#999999]"}>

@@ -4,7 +4,8 @@ import {PortfolioCard} from "@/components/PortfolioCard.tsx";
 export function Showcase() {
 
     return (
-        <>
+        <div id={"projects"}>
+            <div className={"py-24 md:py-48"}></div>
             <SectionTitle primaryTitle={"Showcase"} secondaryTitle={"Made in metaroon"} logoInclude={true}/>
             <div className={"px-[25px] lg:px-[100px]"}>
                 <div className={"grid grid-cols-1 sm:grid-cols-2 gap-10"}>
@@ -37,11 +38,11 @@ export function Showcase() {
                     <PortfolioCard title={"SkillForge"} slogan={"Empowering Your Workforce"}
                                    imgUrl={"/assets/images/portfolio/skillforge.jpg"} tagOneTitle={"Mobile"}
                                    secondaryCard={true}/>
-                    <PortfolioCard title={"ChianWork"} slogan={"Lorem ipsum dolor sit amet consectetur. Tortor nulla."}
+                    <PortfolioCard title={"ChianWork"} slogan={"Empowering the Freelance Economy with Blockchain"}
                                    imgUrl={"/assets/images/portfolio/chainwork.jpg"} tagOneTitle={"Web 3.0"}
                                    secondaryCard={true}/>
                 </div>
             </div>
-        </>
+        </div>
     )
 }

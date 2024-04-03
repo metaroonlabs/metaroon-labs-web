@@ -4,9 +4,11 @@ import {FiChevronRight} from "react-icons/fi";
 import {Button} from "@/components/ui/button.tsx";
 
 export function AboutUs() {
+    const calendlyUrl = 'https://calendly.com/bathiyaw';
 
     return (
-        <div className={"px-[25px] lg:px-[100px]"}>
+        <div className={"px-[25px] lg:px-[100px]"} id={"about"}>
+            <div className={"py-24"}></div>
             <SectionTitle primaryTitle={"Our Vision"} secondaryTitle={"About Us"} logoInclude={true}/>
             <OurVisionCard/>
             <div className={"mt-10"}>
@@ -19,7 +21,9 @@ export function AboutUs() {
                         <div className={"mb-10 relative z-10 text-[20px] md:text-[28px] lg:text-[50px]"}>Book a call
                             with our <br/>co-founder
                         </div>
-                        <Button className={"w-[150px] my-2 relative z-10"}>Book a call <FiChevronRight
+                        <Button onClick={() => window.open(calendlyUrl, '_blank')}
+                                className={"w-[150px] my-2 relative z-10"}>Book a
+                            call <FiChevronRight
                             size={18}/></Button>
                     </div>
                 </div>

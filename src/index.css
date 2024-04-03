@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    scroll-behavior: smooth !important;
+}
+
 body {
     font-family: "Sora", sans-serif;
     font-optical-sizing: auto;
