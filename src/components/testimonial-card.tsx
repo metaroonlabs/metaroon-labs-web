@@ -34,7 +34,7 @@ export function TestimonialCard(props: TestimonialCardProps) {
                     <div className="font-extralight text-[14px] p-10">{props.testimonial}</div>
                     <div className="flex items-center ml-10 pb-4">
                         <img
-                            src={avatar}
+                            src={props.imgUrl}
                             alt="avatar"
                             className={`rounded-full mr-3 object-cover w-[40px] h-[40px]`}
                         />
