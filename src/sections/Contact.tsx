@@ -35,16 +35,18 @@ export function Contact() {
                 <div className={'grid grid-cols-2 grid-flow-row gap-[20px]'}>
                     <ContactCard whiteIconUrl={'/assets/images/contact/phone.png'}
                                  blackIconUrl={'/assets/images/contact/phone-black.png'} title={'Speak on'}
-                                 secondTitle={'the Phone'} url="tel:+94775555525"/>
+                                 secondTitle={'the Phone'} url="tel:+94775555525" contactDetail={"+94775555525"}/>
                     <ContactCard whiteIconUrl={'/assets/images/contact/mail-03.png'}
                                  blackIconUrl={'/assets/images/contact/mail-black.png'} title={'Send us'}
-                                 secondTitle={'an email'} url="mailto:contact@metaroonlabs.com"/>
+                                 secondTitle={'an email'} url="mailto:contact@metaroonlabs.com"
+                                 contactDetail={"contact@metaroonlabs.com"}/>
                     <ContactCard whiteIconUrl={'/assets/images/contact/linkedln.png'}
                                  blackIconUrl={'/assets/images/contact/linkedln-black.png'} title={'Follow us'}
                                  secondTitle={'on LinkedIn'} url={"https://www.linkedin.com/company/metaroon-labs/"}/>
                     <ContactCard whiteIconUrl={'/assets/images/contact/telegram.png'}
                                  blackIconUrl={'/assets/images/contact/telegram-black.png'} title={'Connect us'}
-                                 secondTitle={'on Telegram'} url="tg://resolve?domain=@paragonthedev"/>
+                                 secondTitle={'on Telegram'} url="tg://resolve?domain=@paragonthedev"
+                                 contactDetail={"@paragonthedev"}/>
                 </div>
             </div>
         </div>

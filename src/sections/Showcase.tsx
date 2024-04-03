@@ -5,7 +5,7 @@ export function Showcase() {
 
     return (
         <div id={"projects"}>
-            <div className={"py-24 md:py-48"}></div>
+            <div className={"py-24"}></div>
             <SectionTitle primaryTitle={"Showcase"} secondaryTitle={"Made in metaroon"} logoInclude={true}/>
             <div className={"px-[25px] lg:px-[100px]"}>
                 <div className={"grid grid-cols-1 sm:grid-cols-2 gap-10"}>
