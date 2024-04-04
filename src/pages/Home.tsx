@@ -9,6 +9,16 @@ import {Contact} from "@/sections/Contact.tsx";
 import {DevTools} from "@/sections/DevTools.tsx";
 
 export function Home() {
+    /*const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        // Simulate a loading process
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        }, 2000); // Adjust time based on your needs
+
+        return () => clearTimeout(timer);
+    }, []);*/
 
     return (
         <>
@@ -31,5 +41,5 @@ export function Home() {
                 </div>
             </div>
         </>
-    )
+    );
 }
