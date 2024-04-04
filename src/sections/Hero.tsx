@@ -29,19 +29,19 @@ export function Hero() {
                     Our clients:
                     <div className={"flex flex-wrap justify-center items-center gap-8 place-content-between"}>
                         <img src="/assets/images/hero/logo/draftables.png" alt="draft-labs"
-                             className={"w-[70px]"}/>
+                             className={"w-[40px] md:w-[70px]"}/>
                         <img src="/assets/images/hero/logo/wisdomgaming_logo%201.png" alt="wisdom"
-                             className={"w-[40px]"}/>
+                             className={"w-[25px] md:w-[40px]"}/>
                         <img src="/assets/images/hero/logo/the_math_team_io_logo%201.png" alt="the-math-team"
-                             className={"w-[40px]"}/>
+                             className={"w-[25px] wd md:w-[40px]"}/>
                         <img src="/assets/images/hero/logo/sport.png" alt="sport-aircraft-seats"
-                             className={"w-[100px]"}/>
+                             className={"w-[70px] md:w-[100px]"}/>
                         <img src="/assets/images/hero/logo/Critterpedia.png" alt="critterpedia"
-                             className={"w-[125px] saturate-0"}/>
+                             className={"w-[85px] md:w-[125px] saturate-0"}/>
                         <img src="/assets/images/hero/logo/FPSwebp.webp" alt="FPS"
-                             className={"w-[80px] saturate-0"}/>
+                             className={"w-[45px] md:w-[80px] saturate-0"}/>
                         <img src="/assets/images/hero/logo/acme.png" alt="acme"
-                             className={"w-[25px] saturate-0"}/>
+                             className={"w-[15px] md:w-[25px] saturate-0"}/>
                     </div>
                 </div>
             </div>
