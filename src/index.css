@@ -6,6 +6,10 @@
     scroll-behavior: smooth !important;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Sora", sans-serif;
     font-optical-sizing: auto;
