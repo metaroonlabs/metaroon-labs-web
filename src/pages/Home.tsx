@@ -7,11 +7,9 @@ import {Footer} from "@/sections/Footer.tsx";
 import {AboutUs} from "@/sections/AboutUs.tsx";
 import {Contact} from "@/sections/Contact.tsx";
 import {DevTools} from "@/sections/DevTools.tsx";
-import {LoadingScreen} from "@/sections/LoadingScreen.tsx";
-import {useEffect, useState} from "react";
 
 export function Home() {
-    const [isLoading, setIsLoading] = useState(true);
+    /*const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         // Simulate a loading process
@@ -20,11 +18,10 @@ export function Home() {
         }, 2000); // Adjust time based on your needs
 
         return () => clearTimeout(timer);
-    }, []);
+    }, []);*/
 
     return (
         <>
-            {isLoading && <LoadingScreen/>}
             <div>
                 <Hero/>
                 <div className={"text-white 2xl:max-w-[1420px] mx-auto"}>

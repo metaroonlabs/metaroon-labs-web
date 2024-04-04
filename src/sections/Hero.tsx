@@ -24,7 +24,8 @@ export function Hero() {
                         </div>
                     </div>
                 </div>
-                <div className={"flex flex-col md:flex-row gap-[24px] md:gap-[34px] justify-center items-center pb-[60px] text-[#BBBBBB] px-[25px] lg:px-[100px]"}>
+                <div
+                    className={"flex flex-col lg:flex-row gap-[24px] md:gap-[34px] justify-center items-center pb-[60px] text-[#BBBBBB] px-[25px] lg:px-[100px]"}>
                     Our clients:
                     <div className={"flex flex-wrap justify-center items-center gap-8 place-content-between"}>
                         <img src="/assets/images/hero/logo/draftables.png" alt="draft-labs"
@@ -35,6 +36,12 @@ export function Hero() {
                              className={"w-[40px]"}/>
                         <img src="/assets/images/hero/logo/sport.png" alt="sport-aircraft-seats"
                              className={"w-[100px]"}/>
+                        <img src="/assets/images/hero/logo/Critterpedia.png" alt="critterpedia"
+                             className={"w-[125px] saturate-0"}/>
+                        <img src="/assets/images/hero/logo/FPSwebp.webp" alt="FPS"
+                             className={"w-[80px] saturate-0"}/>
+                        <img src="/assets/images/hero/logo/acme.png" alt="acme"
+                             className={"w-[25px] saturate-0"}/>
                     </div>
                 </div>
             </div>

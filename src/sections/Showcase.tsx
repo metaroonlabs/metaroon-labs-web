@@ -13,7 +13,8 @@ export function Showcase() {
                                    imgUrl={"/assets/images/portfolio/dfk.jpg"} tagOneTitle={"Gaming"}
                                    tagTwoTitle={"Web 3.0"}/>
                     <PortfolioCard title={"Draftables"} slogan={"The Ultimate Web3.0 Football Emulator"}
-                                   imgUrl={"/assets/images/portfolio/draftables.jpg"} tagOneTitle={"Gaming"}/>
+                                   imgUrl={"/assets/images/portfolio/draftables.jpg"} tagOneTitle={"Gaming"}
+                                   tagTwoTitle={"Web 3.0"}/>
                     <PortfolioCard title={"Critterpedia"} slogan={"Nature's Decode in your Pocket"}
                                    imgUrl={"/assets/images/portfolio/critterpedia.jpg"} tagOneTitle={"Mobile"}
                                    tagTwoTitle={"Web 3.0"}/>
@@ -26,7 +27,7 @@ export function Showcase() {
                                    imgUrl={"/assets/images/portfolio/shop_assist.jpg"} tagOneTitle={"Web"}/>
                 </div>
                 <div className={"grid grid-cols-2 sm:grid-cols-3 gap-5 sm:gap-10 mt-10"}>
-                    <PortfolioCard title={"Roulettopia"} slogan={"Lorem ipsum dolor sit"}
+                    <PortfolioCard title={"Plus Roulette"} slogan={"Blockchain Revolutionizes Gambling"}
                                    imgUrl={"/assets/images/portfolio/roulettopia.jpg"} tagOneTitle={"Web 3.0"}
                                    secondaryCard={true}/>
                     <PortfolioCard title={"Scooby Doo & You"} slogan={"Scooby Doo & You Unleash the Mystery Within"}
