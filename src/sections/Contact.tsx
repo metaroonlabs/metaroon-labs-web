@@ -9,7 +9,7 @@ export function Contact() {
     };
 
     return (
-        <div id={"contact"} className={"lg:p-[100px] p-[25px] h-full"}>
+        <div id={"contact"} className={"lg:p-[100px] p-[25px] h-full 2xl:max-w-[1420px] mx-auto"}>
             <div
                 className={'flex flex-col md:flex-row items-center md:items-start justify-between gap-[50px] md:gap-0 relative'}>
                 <div>

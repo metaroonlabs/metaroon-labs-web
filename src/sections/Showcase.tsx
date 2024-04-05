@@ -4,7 +4,7 @@ import {PortfolioCard} from "@/components/PortfolioCard.tsx";
 export function Showcase() {
 
     return (
-        <div id={"projects"}>
+        <div id={"projects"} className={"2xl:max-w-[1420px] mx-auto"}>
             <div className={"py-24"}></div>
             <SectionTitle primaryTitle={"Showcase"} secondaryTitle={"Made in metaroon"} logoInclude={true}/>
             <div className={"px-[25px] lg:px-[100px]"}>

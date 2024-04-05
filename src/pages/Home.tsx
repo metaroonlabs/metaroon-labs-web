@@ -24,7 +24,7 @@ export function Home() {
         <>
             <div>
                 <Hero/>
-                <div className={"text-white 2xl:max-w-[1420px] mx-auto"}>
+                <div className={"text-white"}>
                     <Services/>
                     <div className={"my-24 md:my-48"}></div>
                     <Paragraph/>

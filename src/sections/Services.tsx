@@ -26,7 +26,7 @@ export function Services() {
     };
 
     return (
-        <div id={"services"}>
+        <div id={"services"} className={"2xl:max-w-[1420px] mx-auto"}>
             <div className={"py-24"}></div>
             <SectionTitle primaryTitle={"Services"} secondaryTitle={"What We do"}/>
             <div className={"px-[25px] lg:px-[100px] mt-10"}>

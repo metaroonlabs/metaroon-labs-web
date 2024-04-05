@@ -33,7 +33,7 @@ export function Paragraph() {
     ];
 
     return (
-        <div className="px-[25px] lg:px-[100px]">
+        <div className="px-[25px] lg:px-[100px] 2xl:max-w-[1420px] mx-auto">
             <div className="max-w-[1000px] mx-auto">
                 {lines.map((line, index) => (
                     <AnimatedLine key={index} text={line}/>
