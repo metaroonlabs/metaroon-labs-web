@@ -5,11 +5,13 @@ export function Hero() {
     const calendlyUrl = 'https://calendly.com/bathiyaw';
 
     return (
-        <div className={"relative min-h-[100vh] overflow-y-hidden"}>
+        <div className={"relative min-h-[100vh] overflow-hidden"}>
+            <img src="/assets/images/hero/bg-light.png" alt="bg-light"
+                 className={"absolute top-0 left-[-200px] md:left-[12%] max-w-[670px]"}/>
             <div className={'min-h-screen flex flex-col 2xl:max-w-[1420px] mx-auto'}>
                 <div className={"relative z-20 flex flex-col justify-center items-center flex-1 mt-[50px]"}>
                     <div className={"flex flex-col justify-end gap-[44px]"}>
-                        <div className={"flex flex-col gap-[36px]"}>
+                        <div className={"flex flex-col gap-[20px]"}>
                             <div className={"text-[42px] sm:text-[70px] font-[700] leading-[45px] sm:leading-[70px] text-center text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] from-[41.84%] to-[#131313] to-[99%] px-[25px] lg:px-[100px]"}>
                                 We transform visionary <br/> ideas into reality
                             </div>
@@ -25,23 +27,23 @@ export function Hero() {
                     </div>
                 </div>
                 <div
-                    className={"flex flex-col lg:flex-row gap-[24px] md:gap-[34px] justify-center items-center pb-[60px] text-[#BBBBBB] px-[25px] lg:px-[100px]"}>
+                    className={"flex flex-col xl:flex-row gap-[24px] md:gap-[34px] justify-center items-center pb-[60px] text-[#BBBBBB] px-[25px] lg:px-[100px]"}>
                     Our clients:
-                    <div className={"flex flex-wrap justify-center items-center gap-8 place-content-between"}>
-                        <img src="/assets/images/hero/logo/draftables.png" alt="draft-labs"
-                             className={"w-[40px] md:w-[70px]"}/>
-                        <img src="/assets/images/hero/logo/wisdomgaming_logo%201.png" alt="wisdom"
-                             className={"w-[25px] md:w-[40px]"}/>
-                        <img src="/assets/images/hero/logo/the_math_team_io_logo%201.png" alt="the-math-team"
-                             className={"w-[25px] wd md:w-[40px]"}/>
+                    <div className={"flex flex-wrap justify-center items-center gap-4 lg:gap-8 place-content-between"}>
+                        <img src="/assets/images/hero/logo/draft-labs.png" alt="draft-labs"
+                             className={"w-[45px] lg:w-[76px]"}/>
+                        <img src="/assets/images/hero/logo/wisdom.png" alt="wisdom"
+                             className={"w-[86px] lg:w-[140px]"}/>
+                        <img src="/assets/images/hero/logo/math-team.png" alt="the-math-team"
+                             className={"w-[22px] lg:w-[35px]"}/>
                         <img src="/assets/images/hero/logo/sport.png" alt="sport-aircraft-seats"
-                             className={"w-[70px] md:w-[100px]"}/>
-                        <img src="/assets/images/hero/logo/Critterpedia.png" alt="critterpedia"
-                             className={"w-[85px] md:w-[125px] saturate-0"}/>
-                        <img src="/assets/images/hero/logo/FPSwebp.webp" alt="FPS"
-                             className={"w-[45px] md:w-[80px] saturate-0"}/>
+                             className={"w-[71px] lg:w-[115px]"}/>
+                        <img src="/assets/images/hero/logo/critterpedia.png" alt="critterpedia"
+                             className={"w-[107px] lg:w-[173px]"}/>
+                        <img src="/assets/images/hero/logo/fps.png" alt="FPS"
+                             className={"w-[65px] lg:w-[106px]"}/>
                         <img src="/assets/images/hero/logo/acme.png" alt="acme"
-                             className={"w-[15px] md:w-[25px] saturate-0"}/>
+                             className={"w-[18px] lg:w-[30px]"}/>
                     </div>
                 </div>
             </div>
