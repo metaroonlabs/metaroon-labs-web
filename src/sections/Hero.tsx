@@ -5,7 +5,7 @@ export function Hero() {
     const calendlyUrl = 'https://calendly.com/bathiyaw';
 
     return (
-        <div className={"relative min-h-[100vh] overflow-y-hidden"}>
+        <div className={"relative min-h-[100vh] overflow-hidden"}>
             <img src="/assets/images/hero/bg-light.png" alt="bg-light"
                  className={"absolute top-0 left-[-200px] md:left-[12%] max-w-[670px]"}/>
             <div className={'min-h-screen flex flex-col 2xl:max-w-[1420px] mx-auto'}>
