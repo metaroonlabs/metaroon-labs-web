@@ -2,14 +2,22 @@ type SectionTitleProps = {
     primaryTitle: string;
     secondaryTitle: string;
     logoInclude?: boolean;
+    medium?: boolean;
+    large?: boolean
 }
 
 export function SectionTitle(props: SectionTitleProps) {
+    let textSizeClass = "text-[60px]"; // Default size
+    if (props.large) {
+        textSizeClass = "text-[51px]"; // Override if `large` prop is true
+    } else if (props.medium) {
+        textSizeClass = "text-[56px]"; // Override if `medium` prop is true
+    }
 
     return (
         <div className={"px-[5px] sm:px-[25px] lg:px-[100px] relative mb-10"}>
             <div
-                className="text-[51px] sm:text-[85px] md:text-[100px] lg:text-[115px] xl:text-[155px] 2xl:text-[170px] text-nowrap text-center font-semibold text-transparent bg-clip-text opacity-[15%] bg-gradient-to-b from-[#FFFFFF] from-20% to-[#131313] to-80%">
+                className={`${textSizeClass} sm:text-[85px] md:text-[100px] lg:text-[115px] xl:text-[155px] 2xl:text-[170px] text-nowrap text-center font-semibold text-transparent bg-clip-text opacity-[15%] bg-gradient-to-b from-[#FFFFFF] from-20% to-[#131313] to-80%`}>
                 {props.primaryTitle}
             </div>
             <div className={"absolute left-0 top-[-8px] sm:top-[-3px] md:top-0 xl:top-2 w-full flex justify-center"}>
