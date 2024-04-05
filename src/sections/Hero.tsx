@@ -6,10 +6,12 @@ export function Hero() {
 
     return (
         <div className={"relative min-h-[100vh] overflow-y-hidden"}>
+            <img src="/assets/images/hero/bg-light.png" alt="bg-light"
+                 className={"absolute top-0 left-[-200px] md:left-[12%] max-w-[670px]"}/>
             <div className={'min-h-screen flex flex-col 2xl:max-w-[1420px] mx-auto'}>
                 <div className={"relative z-20 flex flex-col justify-center items-center flex-1 mt-[50px]"}>
                     <div className={"flex flex-col justify-end gap-[44px]"}>
-                        <div className={"flex flex-col gap-[36px]"}>
+                        <div className={"flex flex-col gap-[20px]"}>
                             <div className={"text-[42px] sm:text-[70px] font-[700] leading-[45px] sm:leading-[70px] text-center text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] from-[41.84%] to-[#131313] to-[99%] px-[25px] lg:px-[100px]"}>
                                 We transform visionary <br/> ideas into reality
                             </div>
