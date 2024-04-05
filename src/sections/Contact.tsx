@@ -17,7 +17,7 @@ export function Contact() {
                     className={'flex flex-col md:flex-row items-center md:items-start justify-between gap-[50px] md:gap-0 relative'}>
                     <div>
                         <div
-                            className={'flex-none text-[28px] lg:text-[50px] md:text-[40px] font-[700] leading-[50px] text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] from-[41.84%] to-[#131313] to-[99%]'}>Contact
+                            className={'flex-none text-[36px] lg:text-[50px] md:text-[40px] font-[700] leading-[50px] text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] from-[41.84%] to-[#131313] to-[99%]'}>Contact
                             us
                         </div>
                     </div>
@@ -35,7 +35,7 @@ export function Contact() {
                         />
                     </div>
 
-                    <div className={'grid grid-cols-2 grid-flow-row gap-[20px]'}>
+                    <div className={'grid grid-cols-2 gap-3 sm:gap-[20px] w-full sm:md:w-auto'}>
                         <ContactCard whiteIconUrl={'/assets/images/contact/phone.png'}
                                      blackIconUrl={'/assets/images/contact/phone-black.png'} title={'Speak on'}
                                      secondTitle={'the Phone'} url="tel:+94775555525" contactDetail={"+94775555525"}/>
