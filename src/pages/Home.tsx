@@ -26,15 +26,15 @@ export function Home() {
                 <Hero/>
                 <div className={"text-white"}>
                     <Services/>
-                    <div className={"my-24 md:my-48"}></div>
+                    <div className={"my-[50px] md:my-48"}></div>
                     <Paragraph/>
                     <Showcase/>
-                    <div className={"my-24 md:my-48"}></div>
+                    <div className={"my-[50px] md:my-48"}></div>
                     <Testimonials/>
-                    <div className={"my-24 md:my-48"}></div>
+                    <div className={"my-[50px] md:my-48"}></div>
                     <DevTools/>
                     <AboutUs/>
-                    <div className={"my-24 md:my-48"}></div>
+                    <div className={"my-[50px] md:my-48"}></div>
                     <div className={"w-full relative"}>
                         <img src="/assets/images/hero/grain-texture.png" alt="grain"
                              className={"absolute top-0 left-0 w-full h-full opacity-60"}/>
