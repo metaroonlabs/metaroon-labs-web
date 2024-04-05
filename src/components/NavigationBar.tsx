@@ -14,10 +14,6 @@ export function NavigationBar() {
     const calendlyUrl = 'https://calendly.com/bathiyaw';
     const [isOpen, setIsOpen] = useState(false);
 
-    const handleMobileBtn = () => {
-        setIsOpen(!isOpen)
-    }
-
     return (
         <>
             <NavigationMenu
@@ -51,14 +47,17 @@ export function NavigationBar() {
                     </div>
                     <Button onClick={() => window.open(calendlyUrl, '_blank')} className={"hidden lg:flex"}>Book a
                         call <FiChevronRight
-                        size={18}/></Button>
+                            size={18}/></Button>
 
-                    <DropdownMenu>
-                        <DropdownMenuTrigger asChild onClick={handleMobileBtn}>
-                            <Button className="lg:hidden w-[40px] h-[40px]" variant="outline" onClick={handleMobileBtn}>
-                                <img src="/assets/images/menu.png"
-                                     className={isOpen ? "min-w-[18px] rotate-s" : "min-w-[18px] rotate-a"}
-                                     alt="menu-icon"/>
+                    <DropdownMenu onOpenChange={setIsOpen}>
+                        <DropdownMenuTrigger asChild>
+                            <Button className="lg:hidden w-[40px] h-[40px]" variant="outline">
+                                <img
+                                    src="/assets/images/menu.png"
+                                    className={`min-w-[18px] menu-icon ${isOpen ? 'rotate-[-45deg]' : 'rotate-0'}`}
+                                    alt="menu-icon"
+                                    style={{transition: 'transform 0.3s'}}
+                                />
                             </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent className="w-56 mr-[25px] bg-white">
