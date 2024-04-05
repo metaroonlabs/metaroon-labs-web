@@ -4,25 +4,32 @@ import {Button} from "@/components/ui/button.tsx";
 import {useEffect, useState} from "react";
 
 export function Services() {
-    const [isServices, setIsServices] = useState(true);
+    const [isServices, setIsServices] = useState(() => {
+        const saved = localStorage.getItem("isServices");
+        // Convert string to boolean
+        return saved === "true";
+    });
     const [transitionClass, setTransitionClass] = useState('');
 
     useEffect(() => {
-        // Trigger the enter animation
         setTransitionClass('fade-enter');
         const timer = setTimeout(() => {
             setTransitionClass('fade-enter-active');
-        }, 10); // start animation shortly after render
+        }, 10);
 
         return () => clearTimeout(timer);
-    }, [isServices]); // This effect runs every time isServices changes
+    }, [isServices]);
+
+    useEffect(() => {
+        // Convert boolean to string when saving to localStorage
+        localStorage.setItem("isServices", String(isServices));
+    }, [isServices]);
 
     const handleServicesBtn = () => {
-        // Start the exit animation
         setTransitionClass('fade-exit');
         setTimeout(() => {
             setIsServices(!isServices);
-        }, 300); // Wait for the exit animation to complete before changing the content
+        }, 300);
     };
 
     return (
