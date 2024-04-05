@@ -7,7 +7,7 @@ export function AboutUs() {
     const calendlyUrl = 'https://calendly.com/bathiyaw';
 
     return (
-        <div className={"px-[25px] lg:px-[100px]"} id={"about"}>
+        <div className={"px-[25px] lg:px-[100px] 2xl:max-w-[1420px] mx-auto"} id={"about"}>
             <div className={"py-24"}></div>
             <SectionTitle primaryTitle={"Our Vision"} secondaryTitle={"About Us"} logoInclude={true}/>
             <OurVisionCard/>
