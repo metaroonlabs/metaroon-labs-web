@@ -5,9 +5,9 @@ export function Showcase() {
 
     return (
         <div id={"projects"} className={"2xl:max-w-[1420px] mx-auto"}>
-            <div className={"py-[50px]"}></div>
+            <div className={"pt-[90px]"}></div>
             <SectionTitle primaryTitle={"Showcase"} secondaryTitle={"Made in metaroon"} logoInclude={true}/>
-            <div className={"px-[25px] lg:px-[100px]"}>
+            <div className={"px-[16px] sm:px-[25px] lg:px-[100px]"}>
                 <div className={"grid grid-cols-1 sm:grid-cols-2 gap-10"}>
                     <PortfolioCard title={"DeFi Kingdoms"} slogan={"Forge Fantasy, Finance Future"}
                                    imgUrl={"/assets/images/portfolio/dfk.png"} tagOneTitle={"Gaming"}

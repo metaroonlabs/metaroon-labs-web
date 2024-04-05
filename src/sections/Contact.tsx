@@ -9,7 +9,7 @@ export function Contact() {
     };
 
     return (
-        <div className={"relative overflow-hidden pt-14"}>
+        <div className={"relative overflow-hidden pt-[90px]"}>
             <img src="/assets/images/contact/left-light.png" alt="light"
                  className={"absolute left-0 w-[20%] top-24 min-w-[250px]"}/>
             <div id={"contact"} className={"lg:p-[100px] p-[25px] h-full 2xl:max-w-[1420px] mx-auto"}>

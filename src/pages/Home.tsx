@@ -25,11 +25,11 @@ export function Home() {
                 <Hero/>
                 <div className={"text-white"}>
                     <Services/>
-                    <div className={"my-[50px] md:my-48"}></div>
+                    <div className={"md:my-48"}></div>
                     <Showcase/>
-                    <div className={"my-[50px] md:my-48"}></div>
+                    <div className={"md:my-48"}></div>
                     <Testimonials/>
-                    <div className={"my-[50px] md:my-48"}></div>
+                    <div className={"md:my-48"}></div>
                     <DevTools/>
                     <AboutUs/>
                     <div className={"my-[50px] md:my-48"}></div>
