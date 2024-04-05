@@ -6,7 +6,6 @@ import {useEffect, useState} from "react";
 export function Services() {
     const [isServices, setIsServices] = useState(() => {
         const saved = localStorage.getItem("isServices");
-        // Convert string to boolean
         return saved === "true";
     });
     const [transitionClass, setTransitionClass] = useState('');
@@ -21,16 +20,21 @@ export function Services() {
     }, [isServices]);
 
     useEffect(() => {
-        // Convert boolean to string when saving to localStorage
         localStorage.setItem("isServices", String(isServices));
     }, [isServices]);
 
-    const handleServicesBtn = () => {
+    // Define the type of the target parameter explicitly as 'services' | 'expertise'
+    const handleServicesBtn = (target: 'services' | 'expertise') => {
+        if ((isServices && target === 'services') || (!isServices && target === 'expertise')) {
+            return;
+        }
+
         setTransitionClass('fade-exit');
         setTimeout(() => {
             setIsServices(!isServices);
         }, 300);
     };
+
 
     return (
         <div id={"services"} className={"2xl:max-w-[1420px] mx-auto"}>
@@ -41,12 +45,12 @@ export function Services() {
                     <div className={"w-[170px] p-[1px] bg-gradient-to-b from-[#FFFFFF] to-[#999999] rounded-[5px]"}>
                         <Button variant={`${!isServices ? "secondary" : "default"}`}
                                 className={`${isServices && "bg-[#131313] hover:bg-[#1C1C1C]"} w-full h-full`}
-                                onClick={handleServicesBtn}>Services</Button>
+                                onClick={() => handleServicesBtn('services')}>Services</Button>
                     </div>
                     <div className={"w-[170px] p-[1px] bg-gradient-to-b from-[#FFFFFF] to-[#999999] rounded-[5px]"}>
                         <Button variant={`${isServices ? "secondary" : "default"}`}
                                 className={`${!isServices && "bg-[#131313] hover:bg-[#1C1C1C]"} w-full h-full`}
-                                onClick={handleServicesBtn}>Industry expertise</Button>
+                                onClick={() => handleServicesBtn('expertise')}>Industry expertise</Button>
                     </div>
                 </div>
                 <div className={transitionClass}>
