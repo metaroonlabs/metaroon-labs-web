@@ -9,7 +9,9 @@ export function DevTools() {
             <div className={"hidden md:flex"}>
                 <div
                     className={"grid md:grid-cols-6 lg:grid-cols-8 gap-[5px] mx-[25px] lg:mx-[100px] text-[14px] font-[400] leading-[17.64px] text-[#999999]"}>
-                    <div className={'group flex flex-col gap-[54px] items-center text-center'}>Web Development
+                    <div
+                        className={'group hover:text-white duration-500 flex flex-col gap-[54px] items-center text-center'}>Web
+                        Development
                         <div className={'grid grid-cols-1 gap-[54px]'}>
                             <DevToolCard imgUrl={"/assets/images/devTool/ts.png"} title={"Typescript"}/>
                             <DevToolCard imgUrl={"/assets/images/devTool/nextjs.png"} title={"Next.Js"}/>
@@ -20,7 +22,8 @@ export function DevTools() {
                             <DevToolCard imgUrl={"/assets/images/devTool/nodejs.png"} title={"Node.js"}/>
                         </div>
                     </div>
-                    <div className={'group  flex flex-col gap-[54px] items-center text-center'}>Blockchain
+                    <div
+                        className={'group hover:text-white duration-500  flex flex-col gap-[54px] items-center text-center'}>Blockchain
                         <div className={'grid grid-cols-1 items-center gap-[54px]'}>
                             <DevToolCard imgUrl={"/assets/images/devTool/ethereum.png"} title={"Ethereum"}/>
                             <DevToolCard imgUrl={"/assets/images/devTool/blockchain/solidity.png"} title={"Solidity"}/>
@@ -31,7 +34,9 @@ export function DevTools() {
                             <DevToolCard imgUrl={"/assets/images/devTool/blockchain/algorand.png"} title={"Algorand"}/>
                         </div>
                     </div>
-                    <div className={'group flex flex-col gap-[54px] items-center text-center'}>Mobile App
+                    <div
+                        className={'group hover:text-white duration-500 flex flex-col gap-[54px] items-center text-center'}>Mobile
+                        App
                         <div className={'grid grid-cols-1 items-center gap-[54px]'}>
                             <DevToolCard imgUrl={"/assets/images/devTool/mobile/flutter.png"} title={"Flutter"}/>
                             <DevToolCard imgUrl={"/assets/images/devTool/mobile/android-studio.png"}
@@ -41,7 +46,9 @@ export function DevTools() {
                             <DevToolCard imgUrl={"/assets/images/devTool/reactjs.png"} title={"React Native"}/>
                         </div>
                     </div>
-                    <div className={'group  flex flex-col gap-[54px] items-center text-center'}>Game Development
+                    <div
+                        className={'group hover:text-white duration-500  flex flex-col gap-[54px] items-center text-center'}>Game
+                        Development
                         <div className={'grid grid-cols-1 items-center gap-[54px]'}>
                             <DevToolCard imgUrl={"/assets/images/devTool/gameDev/unity.png"} title={"Unity"}/>
                             <DevToolCard imgUrl={"/assets/images/devTool/gameDev/unreal.png"} title={"Unreal"}/>
@@ -49,7 +56,9 @@ export function DevTools() {
                             <DevToolCard imgUrl={"/assets/images/devTool/gameDev/c++.png"} title={"C++"}/>
                         </div>
                     </div>
-                    <div className={'group flex flex-col gap-[54px] items-center text-center'}>QA Tools
+                    <div
+                        className={'group hover:text-white duration-500 flex flex-col gap-[54px] items-center text-center'}>QA
+                        Tools
                         <div className={'grid grid-cols-1 items-center gap-[54px]'}>
                             <DevToolCard imgUrl={"/assets/images/devTool/selenium.png"} title={"Selenium"}/>
                             <DevToolCard imgUrl={"/assets/images/devTool/qa/cypress.png"} title={"Cypress"}/>
@@ -57,20 +66,26 @@ export function DevTools() {
                             <DevToolCard imgUrl={"/assets/images/devTool/qa/bugzilla.png"} title={"Bugzilla"}/>
                         </div>
                     </div>
-                    <div className={'group flex flex-col gap-[54px] items-center text-center'}>Project Management
+                    <div
+                        className={'group hover:text-white duration-500 flex flex-col gap-[54px] items-center text-center'}>Project
+                        Management
                         <div className={'grid grid-cols-1 items-center gap-[54px]'}>
                             <DevToolCard imgUrl={"/assets/images/devTool/asana.png"} title={"Asana"}/>
                             <DevToolCard imgUrl={"/assets/images/devTool/projectManagement/azure.png"} title={"Azure"}/>
                             <DevToolCard imgUrl={"/assets/images/devTool/projectManagement/jira.png"} title={"Jira"}/>
                         </div>
                     </div>
-                    <div className={'group flex flex-col gap-[54px] items-center text-center'}>Cloud Services
+                    <div
+                        className={'group hover:text-white duration-500 flex flex-col gap-[54px] items-center text-center'}>Cloud
+                        Services
                         <div className={'grid grid-cols-1 items-center gap-[54px]'}>
                             <DevToolCard imgUrl={"/assets/images/devTool/google-cloud.png"} title={"Google Cloud"}/>
                             <DevToolCard imgUrl={"/assets/images/devTool/cloudService/aws.png"} title={"AWS"}/>
                         </div>
                     </div>
-                    <div className={'group flex flex-col gap-[54px] items-center text-center'}>UI/UX Design
+                    <div
+                        className={'group hover:text-white duration-500 flex flex-col gap-[54px] items-center text-center'}>UI/UX
+                        Design
                         <div className={'grid grid-cols-1 items-center gap-[54px]'}>
                             <DevToolCard imgUrl={"/assets/images/devTool/figma.png"} title={"Figma"}/>
                             <DevToolCard imgUrl={"/assets/images/devTool/uiux/adobe.png"} title={"Adobe"}/>
