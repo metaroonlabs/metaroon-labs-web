@@ -1,6 +1,5 @@
 import {Services} from "@/sections/Services.tsx";
 import {Showcase} from "@/sections/Showcase.tsx";
-import {Paragraph} from "@/sections/Paragraph.tsx";
 import {Hero} from "@/sections/Hero.tsx";
 import {Testimonials} from "@/sections/Testimonials.tsx";
 import {Footer} from "@/sections/Footer.tsx";
@@ -27,7 +26,6 @@ export function Home() {
                 <div className={"text-white"}>
                     <Services/>
                     <div className={"my-[50px] md:my-48"}></div>
-                    <Paragraph/>
                     <Showcase/>
                     <div className={"my-[50px] md:my-48"}></div>
                     <Testimonials/>
