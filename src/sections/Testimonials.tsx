@@ -19,9 +19,9 @@ export function Testimonials() {
                 </div>
                 <div className={"w-full xl:w-[48%]"}>
                     <TestimonialCard
-                        testimonial={"“My journey with Metaroon Labs has been a remarkable experience, characterized by effortless collaboration and exceptional communication. Throughout the duration of gaming projects, ranging from six to eight months, their approach to project management stood out as both efficient and effective. What I particularly appreciated was their adeptness in straddling the domains of Web 3.0 and game development, a testament to their broad competencies and innovative edge. The team's ability to navigate complex projects with ease, while maintaining an open and responsive line of communication, significantly contributed to the seamless progression and success of our endeavors. Engaging with Metaroon Labs not only elevated the quality of our projects but also enriched my professional growth and understanding of cutting-edge technologies in the digital landscape.”"}
-                        username={"Jared Belson"} designation={"Founder at EndFrame"}
-                        imgUrl={"/assets/images/testimonials/logo.jpg"} largeCard={true}/>
+                        testimonial={"“Metaroon has a strong and ever-evolving grasp of the latest technologies and are incredibly flexible, seamlessly navigating through complex challenges and embracing new opportunities with a positive attitude and professionalism. What impresses me most is their ability to tackle complex problems head-on, always ready to explore new frontiers in technology. But it’s not just their technical skills that stand out; their personable approach and sense of fun make every collaboration enjoyable. They’re the kind of team members who not only delivers great results but also makes the journey there equally rewarding.”"}
+                        username={"Ian Anderson"} designation={"Founder - The Math Team"}
+                        imgUrl={"/assets/images/testimonials/math-team.png"} largeCard={true}/>
                 </div>
             </div>
         </>
