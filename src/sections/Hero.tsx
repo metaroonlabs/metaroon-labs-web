@@ -12,11 +12,21 @@ export function Hero() {
                 <div className={"relative z-20 flex flex-col justify-center items-center flex-1 mt-[50px]"}>
                     <div className={"flex flex-col justify-end gap-[44px]"}>
                         <div className={"flex flex-col gap-[20px]"}>
-                            <div className={"text-[42px] sm:text-[70px] font-[700] leading-[45px] sm:leading-[70px] text-center text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] from-[41.84%] to-[#131313] to-[99%] px-[25px] lg:px-[100px]"}>
+                            <div
+                                className={"hidden sm:block text-[42px] sm:text-[70px] font-[700] leading-[45px] sm:leading-[70px] text-center text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] from-[41.84%] to-[#131313] to-[99%] px-[16px] sm:px-[25px] lg:px-[100px]"}>
                                 We transform visionary <br/> ideas into reality
                             </div>
-                            <div className={"font-[300] text-[18px] sm:text-[20px] leading-[28px] px-[25px] lg:px-[100px] tracking-[0.03em] text-center"}>
+                            <div
+                                className={"block sm:hidden text-[42px] sm:text-[70px] font-[700] leading-[45px] sm:leading-[70px] text-center text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] from-[41.84%] to-[#131313] to-[99%] px-[16px] sm:px-[25px] lg:px-[100px]"}>
+                                We transform<br/>visionary ideas<br/> into reality
+                            </div>
+                            <div
+                                className={"hidden sm:block  font-[300] text-[18px] sm:text-[20px] leading-[28px] px-[25px] lg:px-[100px] tracking-[0.03em] text-center"}>
                                 Empower your tech dreams with the cutting <br/> edge technology solutions.
+                            </div>
+                            <div
+                                className={"block sm:hidden  font-[300] text-[18px] sm:text-[20px] leading-[28px] px-[25px] lg:px-[100px] tracking-[0.03em] text-center"}>
+                                Empower your tech dreams with<br/>the cutting edge technology <br/>solutions.
                             </div>
                         </div>
                         <div className={"flex justify-center"}>

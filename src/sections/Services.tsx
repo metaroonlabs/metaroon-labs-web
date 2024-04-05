@@ -6,7 +6,6 @@ import {useEffect, useState} from "react";
 export function Services() {
     const [isServices, setIsServices] = useState(() => {
         const saved = localStorage.getItem("isServices");
-        // Convert string to boolean
         return saved === "true";
     });
     const [transitionClass, setTransitionClass] = useState('');
@@ -21,32 +20,39 @@ export function Services() {
     }, [isServices]);
 
     useEffect(() => {
-        // Convert boolean to string when saving to localStorage
         localStorage.setItem("isServices", String(isServices));
     }, [isServices]);
 
-    const handleServicesBtn = () => {
+    // Define the type of the target parameter explicitly as 'services' | 'expertise'
+    const handleServicesBtn = (target: 'services' | 'expertise') => {
+        if ((isServices && target === 'services') || (!isServices && target === 'expertise')) {
+            return;
+        }
+
         setTransitionClass('fade-exit');
         setTimeout(() => {
             setIsServices(!isServices);
         }, 300);
     };
 
+
     return (
-        <div id={"services"} className={"2xl:max-w-[1420px] mx-auto"}>
-            <div className={"py-24"}></div>
+        <div id={"services"} className={"pt-[90px] md:py-24 2xl:max-w-[1420px] mx-auto"}>
             <SectionTitle primaryTitle={"Services"} secondaryTitle={"What We do"}/>
-            <div className={"px-[25px] lg:px-[100px] mt-10"}>
-                <div className={"flex justify-center gap-5 mb-10"}>
-                    <div className={"w-[170px] p-[1px] bg-gradient-to-b from-[#FFFFFF] to-[#999999] rounded-[5px]"}>
-                        <Button variant={`${!isServices ? "secondary" : "default"}`}
-                                className={`${isServices && "bg-[#131313] hover:bg-[#1C1C1C]"} w-full h-full`}
-                                onClick={handleServicesBtn}>Services</Button>
-                    </div>
-                    <div className={"w-[170px] p-[1px] bg-gradient-to-b from-[#FFFFFF] to-[#999999] rounded-[5px]"}>
-                        <Button variant={`${isServices ? "secondary" : "default"}`}
-                                className={`${!isServices && "bg-[#131313] hover:bg-[#1C1C1C]"} w-full h-full`}
-                                onClick={handleServicesBtn}>Industry expertise</Button>
+            <div className={"px-[16px] sm:px-[25px] lg:px-[100px] mt-10"}>
+                <div
+                    className={"mb-7 w-fit mx-auto p-[2px] rounded-[5px] bg-gradient-to-br from-[#9D9D9D] via-[#202020] to-[#9D9D9D]"}>
+                    <div className={"flex justify-center gap-2 p-[8px] bg-[#131313] rounded-[5px]"}>
+                        <div className={"w-[170px] p-[1px] bg-gradient-to-b from-[#FFFFFF] to-[#999999] rounded-[5px]"}>
+                            <Button variant={`${!isServices ? "secondary" : "default"}`}
+                                    className={`${isServices && "bg-[#131313] hover:bg-[#1C1C1C]"} w-full h-full`}
+                                    onClick={() => handleServicesBtn('services')}>Services</Button>
+                        </div>
+                        <div className={"w-[170px] p-[1px] bg-gradient-to-b from-[#FFFFFF] to-[#999999] rounded-[5px]"}>
+                            <Button variant={`${isServices ? "secondary" : "default"}`}
+                                    className={`${!isServices && "bg-[#131313] hover:bg-[#1C1C1C]"} w-full h-full`}
+                                    onClick={() => handleServicesBtn('expertise')}>Industry expertise</Button>
+                        </div>
                     </div>
                 </div>
                 <div className={transitionClass}>

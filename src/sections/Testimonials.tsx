@@ -4,13 +4,14 @@ import {TestimonialCard} from "@/components/testimonial-card.tsx";
 
 export function Testimonials() {
     return (
-        <div className={"relative"}>
+        <div className={"relative pt-[90px]"}>
             <img src="/assets/images/testimonials/left-light.png" alt="light"
                  className={"left-0 absolute w-[50%] top-0 xl:top-[-400px] z-0 lg:block hidden"}/>
             <img src="/assets/images/testimonials/right-light.png" alt="light"
                  className={"right-0 absolute w-[50%] z-0 lg:block hidden"}/>
             <div className={"2xl:max-w-[1420px] mx-auto relative z-10 "}>
-                <SectionTitle primaryTitle={"Testimonials"} secondaryTitle={"What our clients say"} logoInclude={true}/>
+                <SectionTitle primaryTitle={"Testimonials"} secondaryTitle={"What our clients say"} logoInclude={true}
+                              medium={true}/>
                 <div className="flex flex-col xl:flex-row justify-center gap-5 px-[25px] lg:px-[100px]">
                     <div className="w-full xl:w-[52%] flex flex-col gap-5 justify-between">
                         <TestimonialCard
