@@ -19,9 +19,16 @@ export function ServicesCard(props: ServicesCardProps) {
                     <img src="/assets/images/services/grid.png" alt="grid-img"
                          className={"hidden lg:flex w-[170px] absolute top-[-5px] left-[25px] z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"}/>
                     <div
-                        className={"relative z-10 w-[80px] h-[80px] bg-[#191919] rounded-[10px] p-[1px] bg-gradient-to-br from-[#666666] via-[#272626] to-[#272626] shadow-[0_2.8px_2.2px_rgba(255,_255,_255,_0.034),_0_6.7px_5.3px_rgba(255,_255,_255,_0.048),_0_12.5px_10px_rgba(255,_255,_255,_0.06)]"}>
-                        <div className={"bg-[#191919] rounded-[10px] w-full h-full flex justify-center items-center"}>
-                            <img src={props.imgUrl} className={"w-[44px]"} alt="services-img"/>
+                        className={"relative z-10 w-[80px] h-[80px] rounded-[10px]  shadow-[0_2.8px_2.2px_rgba(255,_255,_255,_0.034),_0_6.7px_5.3px_rgba(255,_255,_255,_0.048),_0_12.5px_10px_rgba(255,_255,_255,_0.06)] transition-shadow duration-300 group-hover:shadow-[0_2.8px_2.2px_rgba(255,_255,_255,_0.034),_0_6.7px_5.3px_rgba(255,_255,_255,_0.048),_0_12.5px_10px_rgba(255,_255,_255,_0.26)]"}>
+                        <div
+                            className={"absolute z-0 top-0 left-0 w-full h-full rounded-[10px] bg-gradient-to-br from-[#666666] via-[#272626] to-[#272626] opacity-100 group-hover:opacity-0 transition-opacity duration-300"}></div>
+                        <div
+                            className={"absolute z-0 top-0 left-0 w-full h-full rounded-[10px] bg-gradient-to-br from-[#ffffff] via-[#ffffff] to-[#ffffff] opacity-0 group-hover:opacity-100 transition-opacity duration-300"}></div>
+                        <div className={"relative z-10 p-[1px] w-full h-full"}>
+                            <div
+                                className={" bg-[#191919] rounded-[10px] w-full h-full flex justify-center items-center"}>
+                                <img src={props.imgUrl} className={"w-[44px]"} alt="services-img"/>
+                            </div>
                         </div>
                     </div>
                 </div>
