@@ -8,7 +8,7 @@ export function OurVisionCard() {
                     className="relative rounded-[10px] py-8 md:py-12 overflow-hidden flex flex-row justify-between w-full h-full bg-[#131313]">
                     <div className="flex flex-col justify-center px-5 md:px-10 xl:py-10 w-full">
                         <div
-                            className="text-white font-extralight text-[16px] md:text-[18px] lg:text-[23px] w-full md:w-[80%] xl:w-[62%] text-justify relative z-10">At
+                            className="text-white font-extralight text-[16px] md:text-[18px] lg:text-[23px] w-full mb-[270px] sm:mb-0 sm:w-[62%] relative z-10">At
                             Metaroon
                             Labs, we are dedicated to delivering top-notch tech solutions that meet the unique needs of
                             our
