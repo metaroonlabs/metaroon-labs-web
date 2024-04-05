@@ -3,7 +3,6 @@ import {NavigationMenu, NavigationMenuLink, navigationMenuTriggerStyle} from "@/
 import {Button} from "@/components/ui/button.tsx";
 import {FiChevronRight} from "react-icons/fi";
 import {Sheet, SheetContent, SheetTrigger} from "@/components/ui/sheet.tsx";
-import {MenuIcon} from "lucide-react";
 
 export function NavigationBar() {
     const calendlyUrl = 'https://calendly.com/bathiyaw';
@@ -45,8 +44,8 @@ export function NavigationBar() {
                 </div>
                 <Sheet>
                     <SheetTrigger asChild>
-                        <Button className="lg:hidden" size="icon" variant="outline">
-                            <MenuIcon className="h-6 w-6"/>
+                        <Button className="lg:hidden w-[40px] h-[40px]" variant="outline">
+                            <img src="/assets/images/menu.png" className={"min-w-[18px]"} alt="menu-icon"/>
                         </Button>
                     </SheetTrigger>
                     <SheetContent side="left" className={"bg-[#131313] border-r-0"}>
