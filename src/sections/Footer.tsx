@@ -12,6 +12,7 @@ export function Footer() {
                     </div>
                 </div>
             </div>
+            <div className="py-6"></div>
         </div>
 
     )

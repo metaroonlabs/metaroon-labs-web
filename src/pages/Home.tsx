@@ -35,9 +35,12 @@ export function Home() {
                     <DevTools/>
                     <AboutUs/>
                     <div className={"my-24 md:my-48"}></div>
-                    <Contact/>
-                    <Footer/>
-                    <div className={"my-10"}></div>
+                    <div className={"w-full relative"}>
+                        <img src="/assets/images/hero/grain-texture.png" alt="grain"
+                             className={"absolute top-0 left-0 w-full h-full opacity-60"}/>
+                        <Contact/>
+                        <Footer/>
+                    </div>
                 </div>
             </div>
         </>
