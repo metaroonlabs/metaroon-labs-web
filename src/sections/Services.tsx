@@ -40,16 +40,19 @@ export function Services() {
         <div id={"services"} className={"pt-[90px] md:py-24 2xl:max-w-[1420px] mx-auto"}>
             <SectionTitle primaryTitle={"Services"} secondaryTitle={"What We do"}/>
             <div className={"px-[16px] sm:px-[25px] lg:px-[100px] mt-10"}>
-                <div className={"flex justify-center gap-5 mb-7"}>
-                    <div className={"w-[170px] p-[1px] bg-gradient-to-b from-[#FFFFFF] to-[#999999] rounded-[5px]"}>
-                        <Button variant={`${!isServices ? "secondary" : "default"}`}
-                                className={`${isServices && "bg-[#131313] hover:bg-[#1C1C1C]"} w-full h-full`}
-                                onClick={() => handleServicesBtn('services')}>Services</Button>
-                    </div>
-                    <div className={"w-[170px] p-[1px] bg-gradient-to-b from-[#FFFFFF] to-[#999999] rounded-[5px]"}>
-                        <Button variant={`${isServices ? "secondary" : "default"}`}
-                                className={`${!isServices && "bg-[#131313] hover:bg-[#1C1C1C]"} w-full h-full`}
-                                onClick={() => handleServicesBtn('expertise')}>Industry expertise</Button>
+                <div
+                    className={"mb-7 w-fit mx-auto p-[2px] rounded-[5px] bg-gradient-to-br from-[#9D9D9D] via-[#202020] to-[#9D9D9D]"}>
+                    <div className={"flex justify-center gap-2 p-[8px] bg-[#131313] rounded-[5px]"}>
+                        <div className={"w-[170px] p-[1px] bg-gradient-to-b from-[#FFFFFF] to-[#999999] rounded-[5px]"}>
+                            <Button variant={`${!isServices ? "secondary" : "default"}`}
+                                    className={`${isServices && "bg-[#131313] hover:bg-[#1C1C1C]"} w-full h-full`}
+                                    onClick={() => handleServicesBtn('services')}>Services</Button>
+                        </div>
+                        <div className={"w-[170px] p-[1px] bg-gradient-to-b from-[#FFFFFF] to-[#999999] rounded-[5px]"}>
+                            <Button variant={`${isServices ? "secondary" : "default"}`}
+                                    className={`${!isServices && "bg-[#131313] hover:bg-[#1C1C1C]"} w-full h-full`}
+                                    onClick={() => handleServicesBtn('expertise')}>Industry expertise</Button>
+                        </div>
                     </div>
                 </div>
                 <div className={transitionClass}>
