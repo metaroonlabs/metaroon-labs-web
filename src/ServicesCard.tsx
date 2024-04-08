@@ -8,7 +8,7 @@ export function ServicesCard(props: ServicesCardProps) {
 
     return (
         <div
-            className="group max-w-[236px] w-full h-[200px] lg:h-[260px] rounded-[10px] overflow-hidden p-[2px] relative mx-auto">
+            className="group max-w-[236px] w-full h-[240px] lg:h-[260px] rounded-[10px] overflow-hidden p-[2px] relative mx-auto">
             <div
                 className="absolute inset-0 bg-gradient-to-br from-[#9D9D9D] via-[#202020] to-[#202020] duration-500 group-hover:opacity-0"></div>
             <div
@@ -33,7 +33,7 @@ export function ServicesCard(props: ServicesCardProps) {
                     </div>
                 </div>
                 <div
-                    className={"relative z-10 w-full text-center text-[12px] lg:text-[16px] font-semibold"}>{props.title} {props.secondTitle &&
+                    className={"relative z-10 w-full text-center text-[12px] lg:text-[16px] mb-4 lg:mb-0 font-semibold"}>{props.title} {props.secondTitle &&
                     <>
                         <br/>
                         {props.secondTitle}
