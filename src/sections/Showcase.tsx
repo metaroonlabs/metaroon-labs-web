@@ -33,7 +33,7 @@ export function Showcase() {
                     <PortfolioCard title={"Scooby Doo & You"} slogan={"Scooby Doo & You Unleash the Mystery Within"}
                                    imgUrl={"/assets/images/portfolio/scooby.png"} tagOneTitle={"AI & ML"}
                                    secondaryCard={true}/>
-                    <PortfolioCard title={"Sport Aircraft"} slogan={"The Ultimate Web3.0 Football Emulator"}
+                    <PortfolioCard title={"Sport Aircraft"} slogan={"Fly in Comfort, Land in Style"}
                                    imgUrl={"/assets/images/portfolio/sport.png"} tagOneTitle={"Mobile"}
                                    secondaryCard={true}/>
                     <PortfolioCard title={"SkillForge"} slogan={"Empowering Your Workforce"}
