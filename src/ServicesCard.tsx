@@ -33,7 +33,7 @@ export function ServicesCard(props: ServicesCardProps) {
                     </div>
                 </div>
                 <div
-                    className={"relative z-10 w-full text-center text-[12px] lg:text-[16px] mb-4 lg:mb-0 font-semibold"}>{props.title} {props.secondTitle &&
+                    className={"w-[95%] mx-auto relative z-10 sm:w-full text-center text-[12px] lg:text-[16px] mb-4 lg:mb-0 font-semibold"}>{props.title} {props.secondTitle &&
                     <>
                         <br/>
                         {props.secondTitle}

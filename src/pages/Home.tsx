@@ -24,15 +24,17 @@ export function Home() {
             <div>
                 <Hero/>
                 <div className={"text-white"}>
+                    <div className={"pt-[100px] md:pt-[200px]"}></div>
                     <Services/>
-                    <div className={"md:my-48"}></div>
+                    <div className={"pt-[100px] md:pt-[200px]"}></div>
                     <Showcase/>
-                    <div className={"md:my-48"}></div>
+                    <div className={"pt-[100px] md:pt-[200px]"}></div>
                     <Testimonials/>
-                    <div className={"md:my-48"}></div>
+                    <div className={"pt-[100px] md:pt-[200px]"}></div>
                     <DevTools/>
+                    <div className={"pt-[100px] md:pt-[200px]"}></div>
                     <AboutUs/>
-                    <div className={"my-[50px] md:my-48"}></div>
+                    <div className={"pt-[100px] md:pt-[200px]"}></div>
                     <div className={"w-full relative"}>
                         <img src="/assets/images/hero/grain-texture.png" alt="grain"
                              className={"absolute top-0 left-0 w-full h-full opacity-60"}/>

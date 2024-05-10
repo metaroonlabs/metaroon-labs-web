@@ -8,7 +8,6 @@ export function AboutUs() {
 
     return (
         <div className={"px-[25px] lg:px-[100px] 2xl:max-w-[1420px] mx-auto"} id={"about"}>
-            <div className={"pt-[90px]"}></div>
             <SectionTitle primaryTitle={"Our Vision"} secondaryTitle={"About Us"} logoInclude={true} medium={true}/>
             <OurVisionCard/>
             <div className={"mt-10"}>

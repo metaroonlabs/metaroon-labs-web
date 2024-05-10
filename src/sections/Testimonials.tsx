@@ -4,7 +4,7 @@ import {TestimonialCard} from "@/components/testimonial-card.tsx";
 
 export function Testimonials() {
     return (
-        <div className={"relative pt-[90px]"}>
+        <div className={"relative"}>
             <img src="/assets/images/testimonials/left-light.png" alt="light"
                  className={"left-0 absolute w-[50%] top-0 xl:top-[-400px] z-0 lg:block hidden"}/>
             <img src="/assets/images/testimonials/right-light.png" alt="light"

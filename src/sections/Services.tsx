@@ -37,7 +37,7 @@ export function Services() {
 
 
     return (
-        <div id={"services"} className={"pt-[90px] md:py-24 2xl:max-w-[1420px] mx-auto"}>
+        <div id={"services"} className={"2xl:max-w-[1420px] mx-auto"}>
             <SectionTitle primaryTitle={"Services"} secondaryTitle={"What We do"}/>
             <div className={"px-[16px] sm:px-[25px] lg:px-[100px] mt-10"}>
                 <div

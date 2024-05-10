@@ -4,7 +4,7 @@ import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from "@/co
 
 export function DevTools() {
     return (
-        <div className={"2xl:max-w-[1420px] mx-auto pt-[90px]"}>
+        <div className={"2xl:max-w-[1420px] mx-auto"}>
             <SectionTitle primaryTitle={"Technologies"} secondaryTitle={"Devtool"} large={true}/>
             <div className={"hidden md:flex"}>
                 <div
