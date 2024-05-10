@@ -19,7 +19,7 @@ export function Testimonials() {
                             username={"Brian Ross"} designation={"CEO/Co Founder - Draft Labs"}
                             imgUrl={"/assets/images/testimonials/draft-labs.png"}/>
                         <TestimonialCard
-                            testimonial={"“MetaRoon labs is a needle in a haystack, very often people find themselves disappointed with an outsourced dev team but this isn’t the case with MetaRoon. Their team is brilliant, kind and easy to work with.”"}
+                            testimonial={"“Metaroon labs is a needle in a haystack, very often people find themselves disappointed with an outsourced dev team but this isn’t the case with MetaRoon. Their team is brilliant, kind and easy to work with.”"}
                             username={"Adin Zweigbaum"} designation={"Chief Innovation Officer - Wisdom Gaming"}
                             imgUrl={"/assets/images/testimonials/wisdom.png"}/>
                     </div>

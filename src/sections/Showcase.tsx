@@ -38,7 +38,7 @@ export function Showcase() {
                     <PortfolioCard title={"SkillForge"} slogan={"Empowering Your Workforce"}
                                    imgUrl={"/assets/images/portfolio/skillforge.png"} tagOneTitle={"Mobile"}
                                    secondaryCard={true}/>
-                    <PortfolioCard title={"ChianWork"} slogan={"Empowering the Freelance Economy with Blockchain"}
+                    <PortfolioCard title={"ChainWork"} slogan={"Empowering the Freelance Economy with Blockchain"}
                                    imgUrl={"/assets/images/portfolio/chainwork.png"} tagOneTitle={"Web 3.0"}
                                    secondaryCard={true}/>
                 </div>
