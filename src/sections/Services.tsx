@@ -43,12 +43,12 @@ export function Services() {
                 <div
                     className={"mb-7 w-fit mx-auto p-[2px] rounded-[5px] bg-gradient-to-br from-[#9D9D9D] via-[#202020] to-[#9D9D9D]"}>
                     <div className={"flex justify-center gap-2 p-[8px] bg-[#131313] rounded-[5px]"}>
-                        <div className={"w-[170px] p-[1px] bg-gradient-to-b from-[#FFFFFF] to-[#999999] rounded-[5px]"}>
+                        <div className={`w-[170px] p-[1px] rounded-[5px]`}>
                             <Button variant={`${!isServices ? "secondary" : "default"}`}
                                     className={`${isServices && "bg-[#131313] hover:bg-[#1C1C1C]"} w-full h-full`}
                                     onClick={() => handleServicesBtn('services')}>Services</Button>
                         </div>
-                        <div className={"w-[170px] p-[1px] bg-gradient-to-b from-[#FFFFFF] to-[#999999] rounded-[5px]"}>
+                        <div className={"w-[170px] p-[1px] rounded-[5px]"}>
                             <Button variant={`${isServices ? "secondary" : "default"}`}
                                     className={`${!isServices && "bg-[#131313] hover:bg-[#1C1C1C]"} w-full h-full`}
                                     onClick={() => handleServicesBtn('expertise')}>Industry expertise</Button>
