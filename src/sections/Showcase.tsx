@@ -8,11 +8,11 @@ export function Showcase() {
             <SectionTitle primaryTitle={"Showcase"} secondaryTitle={"Made in metaroon"} logoInclude={true}/>
             <div className={"px-[16px] sm:px-[25px] lg:px-[100px]"}>
                 <div className={"grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-10"}>
-                    <PortfolioCard title={"DeFi Kingdoms"} slogan={"Forge Fantasy, Finance Future"}
-                                   imgUrl={"/assets/images/portfolio/dfk.png"} tagOneTitle={"Gaming"}
-                                   tagTwoTitle={"Web 3.0"}/>
                     <PortfolioCard title={"Draftables"} slogan={"The Ultimate Web3.0 Football Emulator"}
                                    imgUrl={"/assets/images/portfolio/draftables.png"} tagOneTitle={"Gaming"}
+                                   tagTwoTitle={"Web 3.0"}/>
+                    <PortfolioCard title={"DeFi Kingdoms"} slogan={"Forge Fantasy, Finance Future"}
+                                   imgUrl={"/assets/images/portfolio/dfk.png"} tagOneTitle={"Gaming"}
                                    tagTwoTitle={"Web 3.0"}/>
                     <PortfolioCard title={"Critterpedia"} slogan={"Nature's Decode in your Pocket"}
                                    imgUrl={"/assets/images/portfolio/critterpedia.png"} tagOneTitle={"Mobile"}
@@ -29,8 +29,9 @@ export function Showcase() {
                     <PortfolioCard title={"Plus Roulette"} slogan={"Blockchain Revolutionizes Gambling"}
                                    imgUrl={"/assets/images/portfolio/roulettopia.png"} tagOneTitle={"Web 3.0"}
                                    secondaryCard={true}/>
-                    <PortfolioCard title={"Scooby Doo & You"} slogan={"Scooby Doo & You Unleash the Mystery Within"}
-                                   imgUrl={"/assets/images/portfolio/scooby.png"} tagOneTitle={"AI & ML"}
+                    <PortfolioCard title={"Dx Rune"}
+                                   slogan={"Mint & Lock bitcoin runes with one dashboard for trading info"}
+                                   imgUrl={"/assets/images/portfolio/dx-rune.png"} tagOneTitle={"Web 3.0"}
                                    secondaryCard={true}/>
                     <PortfolioCard title={"Sport Aircraft"} slogan={"Fly in Comfort, Land in Style"}
                                    imgUrl={"/assets/images/portfolio/sport.png"} tagOneTitle={"Mobile"}
