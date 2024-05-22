@@ -18,7 +18,7 @@ export function AboutUs() {
                         <img src="/assets/images/vision/grid.png" alt="grid"
                              className={"w-full absolute top-0 left-0 z-0 h-full"}/>
                         <div className={"mb-10 relative z-10 text-[20px] md:text-[28px] lg:text-[50px]"}>Book a call
-                            with our <br/>co-founder
+                            with <br/>our team
                         </div>
                         <Button onClick={() => window.open(calendlyUrl, '_blank')}
                                 className={"w-[150px] my-2 relative z-10"}>Book a
