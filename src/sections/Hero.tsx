@@ -41,19 +41,19 @@ export function Hero() {
                     Our clients:
                     <div className={"flex flex-wrap justify-center items-center gap-4 lg:gap-8 place-content-between"}>
                         <img src="/assets/images/hero/logo/draft-labs.png" alt="draft-labs"
-                             className={"w-[45px] lg:w-[76px]"}/>
+                             className={"w-[45px] xl:w-[76px]"}/>
                         <img src="/assets/images/hero/logo/wisdom.png" alt="wisdom"
-                             className={"w-[86px] lg:w-[140px]"}/>
+                             className={"w-[86px] xl:w-[140px]"}/>
                         <img src="/assets/images/hero/logo/math-team.png" alt="the-math-team"
-                             className={"w-[22px] lg:w-[35px]"}/>
+                             className={"w-[22px] xl:w-[35px]"}/>
                         <img src="/assets/images/hero/logo/sport.png" alt="sport-aircraft-seats"
-                             className={"w-[71px] lg:w-[115px]"}/>
+                             className={"w-[71px] xl:w-[115px]"}/>
                         <img src="/assets/images/hero/logo/critterpedia.png" alt="critterpedia"
-                             className={"w-[107px] lg:w-[173px]"}/>
+                             className={"w-[107px] xl:w-[173px]"}/>
                         <img src="/assets/images/hero/logo/fps.png" alt="FPS"
-                             className={"w-[65px] lg:w-[106px]"}/>
+                             className={"w-[65px] xl:w-[106px]"}/>
                         <img src="/assets/images/hero/logo/acme.png" alt="acme"
-                             className={"w-[18px] lg:w-[30px]"}/>
+                             className={"w-[18px] xl:w-[30px]"}/>
                     </div>
                 </div>
             </div>
