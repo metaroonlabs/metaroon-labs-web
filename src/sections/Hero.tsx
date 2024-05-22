@@ -14,7 +14,7 @@ export function Hero() {
                     <div className={"flex flex-col justify-end gap-[44px]"}>
                         <div className={"flex flex-col gap-[20px]"}>
                             <div
-                                className={"hidden sm:block text-[42px] sm:text-[70px] font-[700] leading-[45px] sm:leading-[70px] text-center text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] from-[41.84%] to-[#131313] to-[99%] px-[16px] sm:px-[25px] lg:px-[100px]"}>
+                                className={"hidden sm:block text-[42px] sm:text-[70px] font-[700] leading-[45px] sm:leading-[70px] text-center text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] from-[70%] to-[#131313] to-[99%] px-[16px] sm:px-[25px] lg:px-[100px]"}>
                                 We transform visionary <br/> ideas into reality
                             </div>
                             <div
