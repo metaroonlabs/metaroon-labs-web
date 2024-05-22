@@ -6,6 +6,7 @@ import {Footer} from "@/sections/Footer.tsx";
 import {AboutUs} from "@/sections/AboutUs.tsx";
 import {Contact} from "@/sections/Contact.tsx";
 import {DevTools} from "@/sections/DevTools.tsx";
+import {FloatingSocialIcons} from "@/components/ui/FloatingSocialIcons.tsx";
 
 export function Home() {
     /*const [isLoading, setIsLoading] = useState(true);
@@ -42,6 +43,7 @@ export function Home() {
                         <Footer/>
                     </div>
                 </div>
+                <div className={"fixed right-5 bottom-10 lg:right-10 lg:bottom-8 z-20"}><FloatingSocialIcons/></div>
             </div>
         </>
     );
