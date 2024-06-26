@@ -14,6 +14,7 @@ import * as THREE from 'three';
 
 const ThreeScene = () => {
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
+    const mouse = useRef({ x: 0, y: 0 });
 
     useEffect(() => {
         if (!canvasRef.current) return;
@@ -101,10 +102,26 @@ const ThreeScene = () => {
             renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
         };
 
+        const handleMouseMove = (event: MouseEvent) => {
+            const halfWidth = window.innerWidth / 2;
+            const halfHeight = window.innerHeight / 2;
+
+            // Calculate mouse position in normalized device coordinates (-1 to +1) for both components
+            mouse.current.x = (event.clientX - halfWidth) / halfWidth;
+            mouse.current.y = (event.clientY - halfHeight) / halfHeight;
+
+            // Update camera rotation based on mouse x position
+            camera.rotation.y = -mouse.current.x * 0.01;
+            camera.rotation.x = -mouse.current.y * 0.01;
+        };
+
+        window.addEventListener('mousemove', handleMouseMove);
+
         window.addEventListener('resize', handleResize);
 
         return () => {
             window.removeEventListener('resize', handleResize);
+            window.addEventListener('mousemove', handleMouseMove);
         };
     }, []);
 
