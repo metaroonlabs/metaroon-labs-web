@@ -11,11 +11,11 @@ export function Showcase() {
                     <PortfolioCard title={"Draftables"} slogan={"The Ultimate Web3.0 Football Emulator"}
                                    imgUrl={"/assets/images/portfolio/draftables.png"} tagOneTitle={"Gaming"}
                                    tagTwoTitle={"Web 3.0"}/>
-                    <PortfolioCard title={"DeFi Kingdoms"} slogan={"Forge Fantasy, Finance Future"}
-                                   imgUrl={"/assets/images/portfolio/dfk.png"} tagOneTitle={"Gaming"}
-                                   tagTwoTitle={"Web 3.0"}/>
                     <PortfolioCard title={"Critterpedia"} slogan={"Nature's Decode in your Pocket"}
                                    imgUrl={"/assets/images/portfolio/critterpedia.png"} tagOneTitle={"Mobile"}
+                                   tagTwoTitle={"Web 3.0"}/>
+                    <PortfolioCard title={"DeFi Kingdoms"} slogan={"Forge Fantasy, Finance Future"}
+                                   imgUrl={"/assets/images/portfolio/dfk.png"} tagOneTitle={"Gaming"}
                                    tagTwoTitle={"Web 3.0"}/>
                     <PortfolioCard title={"Insighto"} slogan={"Elevating Product Interaction"}
                                    imgUrl={"/assets/images/portfolio/insighto.png"} tagOneTitle={"Gaming"}
