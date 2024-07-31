@@ -5,7 +5,7 @@ export function Showcase() {
 
     return (
         <div id={"projects"} className={"2xl:max-w-[1420px] mx-auto"}>
-            <SectionTitle primaryTitle={"Showcase"} secondaryTitle={"Made in metaroon"} logoInclude={true}/>
+            <SectionTitle primaryTitle={"Showcase"} secondaryTitle={"Made in metarune"} logoInclude={true}/>
             <div className={"px-[16px] sm:px-[25px] lg:px-[100px]"}>
                 <div className={"grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-10"}>
                     <PortfolioCard title={"Draftables"} slogan={"The Ultimate Web3.0 Football Emulator"}

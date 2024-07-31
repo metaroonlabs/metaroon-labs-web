@@ -15,17 +15,17 @@ export function Testimonials() {
                 <div className="flex flex-col xl:flex-row justify-center gap-5 px-[25px] lg:px-[100px]">
                     <div className="w-full xl:w-[52%] flex flex-col gap-5 justify-between">
                         <TestimonialCard
-                            testimonial={"“Metaroon Labs has been a game-changer for my company. Their reasonable cost, frequent communication, and high efficiency has made them stand out from the competition, and it's been a pleasure to work with them!”"}
+                            testimonial={"“Metarune Labs has been a game-changer for my company. Their reasonable cost, frequent communication, and high efficiency has made them stand out from the competition, and it's been a pleasure to work with them!”"}
                             username={"Brian Ross"} designation={"CEO/Co Founder - Draft Labs"}
                             imgUrl={"/assets/images/testimonials/draft-labs.png"}/>
                         <TestimonialCard
-                            testimonial={"“Metaroon labs is a needle in a haystack, very often people find themselves disappointed with an outsourced dev team but this isn’t the case with MetaRoon. Their team is brilliant, kind and easy to work with.”"}
+                            testimonial={"“Metarune labs is a needle in a haystack, very often people find themselves disappointed with an outsourced dev team but this isn’t the case with Metarune. Their team is brilliant, kind and easy to work with.”"}
                             username={"Adin Zweigbaum"} designation={"Chief Innovation Officer - Wisdom Gaming"}
                             imgUrl={"/assets/images/testimonials/wisdom.png"}/>
                     </div>
                     <div className={"w-full xl:w-[48%]"}>
                         <TestimonialCard
-                            testimonial={"“Metaroon has a strong and ever-evolving grasp of the latest technologies and are incredibly flexible, seamlessly navigating through complex challenges and embracing new opportunities with a positive attitude and professionalism. What impresses me most is their ability to tackle complex problems head-on, always ready to explore new frontiers in technology. But it’s not just their technical skills that stand out; their personable approach and sense of fun make every collaboration enjoyable. They’re the kind of team members who not only delivers great results but also makes the journey there equally rewarding.”"}
+                            testimonial={"“Metarune has a strong and ever-evolving grasp of the latest technologies and are incredibly flexible, seamlessly navigating through complex challenges and embracing new opportunities with a positive attitude and professionalism. What impresses me most is their ability to tackle complex problems head-on, always ready to explore new frontiers in technology. But it’s not just their technical skills that stand out; their personable approach and sense of fun make every collaboration enjoyable. They’re the kind of team members who not only delivers great results but also makes the journey there equally rewarding.”"}
                             username={"Ian Anderson"} designation={"Founder - The Math Team"}
                             imgUrl={"/assets/images/testimonials/math-team.png"} largeCard={true}/>
                     </div>

@@ -12,7 +12,7 @@ export function Footer() {
                     </div>
                     <div
                         className={"flex items-center flex-row justify-between gap-2 sm:gap-5 md:gap-10 text-[10px] sm:text-[16px]"}>
-                        <div>© 2024 metaroonlabs. All rights reserved.</div>
+                        <div>© 2024 metarunelabs. All rights reserved.</div>
                         <a href="">Privacy-Policy</a>
                     </div>
                 </div>
