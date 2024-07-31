@@ -24,22 +24,22 @@ export function NavigationBar() {
                              className={"w-[125px] cursor-pointer"}/>
                     </Link>
                     <div className={"hidden gap-[30px] lg:flex justify-center"}>
-                        <Link href="#projects">
+                        <Link href="/#projects">
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                 Projects
                             </NavigationMenuLink>
                         </Link>
-                        <Link href="#services">
+                        <Link href="/#services">
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                 Services
                             </NavigationMenuLink>
                         </Link>
-                        <Link href="#about">
+                        <Link href="/#about">
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                 About
                             </NavigationMenuLink>
                         </Link>
-                        <Link href="#contact">
+                        <Link href="/#contact">
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                 Contact
                             </NavigationMenuLink>
@@ -63,22 +63,22 @@ export function NavigationBar() {
                         <DropdownMenuContent className="w-56 mr-[25px] bg-white">
                             <DropdownMenuRadioGroup value={"bottom"} className={"bg-white"}>
                                 <div className={" flex flex-col gap-2 justify-center text-[#131313]"}>
-                                    <Link href="#projects">
+                                    <Link href="/#projects">
                                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                             Projects
                                         </NavigationMenuLink>
                                     </Link>
-                                    <Link href="#services">
+                                    <Link href="/#services">
                                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                             Services
                                         </NavigationMenuLink>
                                     </Link>
-                                    <Link href="#about">
+                                    <Link href="/#about">
                                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                             About
                                         </NavigationMenuLink>
                                     </Link>
-                                    <Link href="#contact">
+                                    <Link href="/#contact">
                                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                             Contact
                                         </NavigationMenuLink>
