@@ -38,7 +38,7 @@ export function Home() {
                     <div className={"pt-[100px] md:pt-[200px]"}></div>
                     <div className={"w-full relative"}>
                         <img src="/assets/images/hero/grain-texture.png" alt="grain"
-                             className={"absolute top-0 left-0 w-full h-full opacity-60"}/>
+                             className={"absolute top-0 left-0 w-full h-full opacity-60 select-none pointer-events-none"}/>
                         <Contact/>
                         <Footer/>
                     </div>

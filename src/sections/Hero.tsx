@@ -60,7 +60,7 @@ export function Hero() {
             </div>
             <div className={'absolute w-full bottom-[-175px] z-10'}><ThreeScene/></div>
             <img src="/assets/images/hero/grain-texture.png" alt="grain"
-                 className={'absolute w-full h-full top-0 left-0 z-10 mix-blend-overlay'}/>
+                 className={'absolute w-full h-full top-0 left-0 z-10 mix-blend-overlay pointer-events-none select-none'}/>
         </div>
     )
 }
