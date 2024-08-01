@@ -35,7 +35,7 @@ export function SectionTitle(props: SectionTitleProps) {
                         props.logoInclude &&
                         <img src="/assets/images/logo/logo-emblem.png"
                              className={"w-[18px] sm:w-[30px] lg:w-[30px] xl:w-[40px] 2xl:w-[45px]"}
-                             alt="metaroon-logo"/>
+                             alt="metarune-logo"/>
                     }
                     {props.secondaryTitle}
                 </div>

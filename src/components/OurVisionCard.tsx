@@ -9,7 +9,7 @@ export function OurVisionCard() {
                     <div className="flex flex-col justify-center px-5 md:px-10 xl:py-10 w-full">
                         <div
                             className="text-white font-extralight text-[16px] md:text-[18px] lg:text-[23px] w-full mb-[270px] sm:mb-0 sm:w-[62%] relative z-10">At
-                            Metaroon
+                            Metarune
                             Labs, we are dedicated to delivering top-notch tech solutions that meet the unique needs of
                             our
                             clients. Our team of experienced professionals is passionate about utilizing the latest and

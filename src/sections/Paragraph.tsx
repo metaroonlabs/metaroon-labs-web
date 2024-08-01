@@ -22,7 +22,7 @@ const AnimatedLine: React.FC<AnimatedLineProps> = ({text}) => {
 
 export function Paragraph() {
     const lines = [
-        "Metaroon Labs help to make",
+        "Metarune Labs help to make",
         "your dream come true with",
         "software solutions. We are",
         " skilled with multiple",

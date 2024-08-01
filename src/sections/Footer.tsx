@@ -1,4 +1,5 @@
 import AppConfig from "@/config/app-config.ts";
+import { Link } from 'react-router-dom';
 
 export function Footer() {
 
@@ -12,8 +13,8 @@ export function Footer() {
                     </div>
                     <div
                         className={"flex items-center flex-row justify-between gap-2 sm:gap-5 md:gap-10 text-[10px] sm:text-[16px]"}>
-                        <div>© 2024 metaroonlabs. All rights reserved.</div>
-                        <a href="">Privacy-Policy</a>
+                        <div>© 2024 metarunelabs. All rights reserved.</div>
+                        <Link to="/privacy-policy" className={'cursor-pointer'}>Privacy-Policy</Link>
                     </div>
                 </div>
             </div>
