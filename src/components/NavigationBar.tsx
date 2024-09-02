@@ -44,6 +44,11 @@ export function NavigationBar() {
                                 Contact
                             </NavigationMenuLink>
                         </Link>
+                        <Link href="/Careers">
+                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                Careers
+                            </NavigationMenuLink>
+                        </Link>
                     </div>
                     <Button onClick={() => window.open(calendlyUrl, '_blank')} className={"hidden lg:flex"}>Book a
                         call <FiChevronRight
@@ -81,6 +86,11 @@ export function NavigationBar() {
                                     <Link href="/#contact">
                                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                             Contact
+                                        </NavigationMenuLink>
+                                    </Link>
+                                    <Link href="/Careers">
+                                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                            Careers
                                         </NavigationMenuLink>
                                     </Link>
                                 </div>
