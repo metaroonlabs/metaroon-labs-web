@@ -21,7 +21,7 @@ function CareersHero() {
 
         <div className="w-full flex justify-center">
             <div className="flex space-x-4 rounded-lg p-2 shadow-md">
-                <div className="py-2 px-4 bg-transparent text-white text-[16px] font-bold cursor-pointer" onClick={() => ()}>
+                <div className="py-2 px-4 bg-transparent text-white text-[16px] font-bold cursor-pointer">
                     All Jobs
                 </div>
                 <button className="py-2 px-4 text-[#C1C1C1] text-[16px] font-normal">
