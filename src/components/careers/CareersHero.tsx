@@ -1,4 +1,5 @@
 import TabBar from "@/components/careers/TabBar.tsx";
+import JobCard from "@/components/careers/JobCard.tsx";
 
 function CareersHero() {
 
@@ -25,6 +26,7 @@ function CareersHero() {
             </div>
 
             <TabBar />
+            <JobCard />
 
         </>
 
