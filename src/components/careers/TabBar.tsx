@@ -15,16 +15,16 @@ function TabBar() {
     return (
         <>
             <div className="w-full flex justify-center pt-[100px]">
-                <h1 className="text-[40px] font-bold leading-[40px]">Current Opportunities</h1>
+                <h1 className="text-[40px] font-bold leading-[40px] text-center">Current Opportunities</h1>
             </div>
 
             <div className="w-full flex justify-center mt-[65px]">
-                <div className="flex space-x-[10px] w-[691px] p-2 shadow-md">
+                <div className="flex space-x-[10px] w-[691px] p-2 shadow-md overflow-x-auto scrollbar-hide">
                     {tabs.map((tab) => (
                         <div
                             key={tab.name}
                             onClick={() => setActiveTab(tab.name)}
-                            className={`cursor-pointer py-2 px-4 font-[16px] leading-[16px] transition ease-in-out ${
+                            className={`cursor-pointer text-center py-2 px-4 font-[16px] leading-[16px] transition ease-in-out ${
                                 activeTab === tab.name
                                     ? 'text-white underline decoration-2 underline-offset-[16px] font-bold'
                                     : 'text-[#C1C1C1] font-normal'
