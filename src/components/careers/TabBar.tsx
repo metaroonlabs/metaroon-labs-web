@@ -14,11 +14,11 @@ function TabBar() {
 
     return (
         <>
-            <div className="w-full flex justify-center pt-20 pb-10">
+            <div className="w-full flex justify-center pt-[100px]">
                 <h1 className="text-[40px] font-bold leading-[40px]">Current Opportunities</h1>
             </div>
 
-            <div className="w-full flex justify-center">
+            <div className="w-full flex justify-center mt-[65px]">
                 <div className="flex space-x-[10px] w-[691px] p-2 shadow-md">
                     {tabs.map((tab) => (
                         <div

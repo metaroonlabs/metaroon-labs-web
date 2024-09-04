@@ -1,4 +1,4 @@
-import {FiBriefcase, FiChevronRight, FiMapPin, FiMonitor} from "react-icons/fi";
+import {FiBriefcase, FiChevronDown, FiChevronRight, FiChevronUp, FiMapPin, FiMonitor} from "react-icons/fi";
 import {Button} from "@/components/ui/button.tsx";
 import {useState} from "react";
 
@@ -12,15 +12,15 @@ function JobCard() {
     ];
     return (
         <>
-            <div className="max-w-[1240px] mx-auto p-[2px] rounded-[10px] bg-gradient-to-br from-[#9D9D9D] via-[#202020] to-[#202020] mt-12">
-                <div className="bg-[#131313] rounded-[10px] p-10 space-y-8">
+            <div className="max-w-[1240px] mx-auto p-[2px] rounded-[10px] bg-gradient-to-br from-[#9D9D9D] via-[#202020] to-[#202020] mt-[60px]">
+                <div className="bg-[#131313] rounded-[10px] py-[67px] px-[90px]">
                     <div className="flex justify-between items-center w-[1060px] mx-auto">
-                        <h2 className="text-[30px] font-bold leading-[30px]">Senior UX-UI Designer</h2>
+                        <h2 className="text-[30px] font-bold leading-[30px] mb-[30px]">Senior UX-UI Designer</h2>
                         <Button className={"hidden lg:flex"}>Apply Now <FiChevronRight size={18}/>
                         </Button>
                     </div>
 
-                    <div className="flex items-center gap-[10px] w-[1060px] mx-auto">
+                    <div className="flex items-center gap-[10px] w-[1060px] mx-auto mb-[30px]">
                         <div
                             className="flex items-center bg-[#1B1B1B] text-[#DAFF00] px-[14px] py-[7px] rounded-[38px] w-[127px] h-[34px] space-x-[6px]">
                             <FiMapPin size={20}/>
@@ -43,7 +43,7 @@ function JobCard() {
 
                     <hr className="my-4 border-[#212121] w-[1060px] mx-auto"/>
 
-                    <p className="text-[16px] text-[#C1C1C1] font-[300] leading-[22.4px] tracking-wide w-[1060px] mx-auto">
+                    <p className="text-[16px] text-[#C1C1C1] font-[300] leading-[22.4px] tracking-wide w-[1060px] mx-auto mt-[18px]">
                         We’re looking to hire a full-time remote Senior UX/UI Designer to join our team and contribute
                         to
                         creating seamless user experiences for our projects. In this role, you will be responsible for
@@ -51,15 +51,10 @@ function JobCard() {
                         fully responsive visuals from start to finish, ensuring a high-quality user experience.
                     </p>
 
-                    <div className="w-[1060px] mx-auto">
-                        <div
-                            onClick={() => setShowMore(!showMore)}>{showMore ? "Show Less" : "Show More"} <FiChevronRight size={18}/>
-                        </div>
-                    </div>
 
                     {showMore && (
                         <>
-                            <div className="flex items-center gap-[10px] w-[1056px] mx-auto">
+                            <div className="flex items-center gap-[10px] w-[1056px] mx-auto mt-[60px]">
                                 <div className="flex">
                                     {tabs.map((tab) => (
                                         <div
@@ -78,12 +73,12 @@ function JobCard() {
                             </div>
 
                             <div className="flex justify-center">
-                                <div className="w-[1056px] border-t border-[#212121] mt-[-25px]"></div>
+                                <div className="w-[1056px] border-t border-[#212121] mt-[6px]"></div>
                             </div>
 
-                            <div className="w-[1060px] mx-auto">
-                                <h3 className="text-xl font-bold mb-2">Company Overview</h3>
-                                <p className="mb-4">
+                            <div className="w-[1060px] mt-[40px]">
+                                <h3 className="text-xl font-bold mb-6">Company Overview</h3>
+                                <p className="mb-4 text-[#C1C1C1] text-[16px] font-light">
                                     At Metaroon Labs, we are dedicated to delivering top-notch tech solutions that meet
                                     the unique
                                     needs of our clients. Our team of experienced professionals is passionate about
@@ -97,6 +92,15 @@ function JobCard() {
                             </div>
                         </>
                     )}
+
+                    <div className="w-[1060px] mt-[45px]">
+                        <div
+                            className="flex cursor-pointer justify-end text-[16px] underline font-semibold gap-2"
+                            onClick={() => setShowMore(!showMore)}>
+                            {showMore ? "Show Less" : "Show More"}
+                            {showMore ? <FiChevronUp size={18}/> : <FiChevronDown size={18}/>}
+                        </div>
+                    </div>
                 </div>
 
             </div>
