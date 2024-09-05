@@ -1,6 +1,3 @@
-import TabBar from "@/components/careers/TabBar.tsx";
-import JobCard from "@/components/careers/JobCard.tsx";
-
 function CareersHero() {
 
     return (
@@ -24,10 +21,6 @@ function CareersHero() {
                     </div>
                 </div>
             </div>
-
-            <TabBar />
-            <JobCard />
-
         </>
 
     )
