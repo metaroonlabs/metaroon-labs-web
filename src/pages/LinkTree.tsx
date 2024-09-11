@@ -6,7 +6,7 @@ export function LinkTree() {
 
     return (
         <div
-            className={"w-full min-h-screen 2xl:max-w-[1420px] px-[16px] sm:px-[25px] lg:px-[100px] mx-auto flex items-center"}>
+            className={"py-32 w-full min-h-screen 2xl:max-w-[1420px] px-[16px] sm:px-[25px] lg:px-[100px] mx-auto flex items-center"}>
             <div className={"w-full lg:flex justify-center gap-2"}>
                 <div
                     className={"w-full lg:w-[46%] h-[200px] mb-[8px] lg:h-[616px] lg:mb-0 relative rounded-[8px] border-2 border-[#202020] text-[#FFFFFF] bg-[#131313] overflow-hidden cursor-pointer group hover:bg-[#FFFFFF] hover:text-[#1A1A1A] duration-500"}
@@ -34,7 +34,7 @@ export function LinkTree() {
                         className={"min-h-[200px] h-[200px] lg:h-auto w-full flex-1 flex flex-col justify-between p-8 rounded-[8px] border-2 border-[#202020] bg-[#131313] overflow-hidden group hover:bg-[#FFFFFF] hover:text-[#1A1A1A] duration-500"}>
                         <div className={"font-medium text-[24px]"}>Connect with Telegram</div>
                         <div
-                            className={"hidden items-center gap-10 text-[#1A1A1A] opacity-0 group-hover:flex group-hover:opacity-100 duration-500"}>
+                            className={"hidden lg:items-center gap-3 lg:gap-10 text-[#1A1A1A] opacity-0 group-hover:flex flex-col lg:flex-row group-hover:opacity-100 duration-500"}>
                             <a href="https://t.me/paragonthedev" target="_blank" rel="noopener noreferrer"
                                className={"flex items-center gap-3"}>
                                 <img src="/assets/images/linktree/telegram.png" alt="telegram-icon"
