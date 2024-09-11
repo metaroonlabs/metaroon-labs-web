@@ -1,8 +1,7 @@
 import AppConfig from "@/config/app-config.ts";
-import {Link, useNavigate} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 export function Footer() {
-    const navigate = useNavigate();
 
     return (
         <div className={"2xl:max-w-[1420px] mx-auto"}>
@@ -14,7 +13,7 @@ export function Footer() {
                     </div>
                     <div
                         className={"flex items-center flex-row justify-between gap-2 sm:gap-5 md:gap-10 text-[10px] sm:text-[16px]"}>
-                        <div onClick={() => navigate('/hello')}>© 2024 metarunelabs. All rights reserved.</div>
+                        <div>© 2024 metarunelabs. All rights reserved.</div>
                         <Link to="/privacy-policy" className={'cursor-pointer'}>Privacy-Policy</Link>
                     </div>
                 </div>
