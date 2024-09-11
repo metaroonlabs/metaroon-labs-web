@@ -21,7 +21,7 @@ export function NavigationBar() {
             <NavigationMenu
                 className={"min-w-full h-[80px] backdrop-blur bg-[#131313]/75 flex justify-center px-[25px] lg:px-[100px] fixed top-0 z-50"}>
                 <div className={"w-full flex justify-between 2xl:max-w-[1320px] mx-auto"}>
-                    <Link>
+                    <Link href={"/"}>
                         <img src="/assets/images/logo/logo.png" alt="metaroon-logo"
                              className={"w-[125px] cursor-pointer"}/>
                     </Link>
