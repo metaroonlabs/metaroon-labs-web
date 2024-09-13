@@ -1,6 +1,7 @@
 import TabBar from "@/components/careers/TabBar.tsx";
 import JobCard from "@/components/careers/JobCard.tsx";
 import {FiBriefcase, FiMapPin, FiMonitor} from "react-icons/fi";
+import CallBox from "@/components/careers/CallBox.tsx";
 
 function CareersBody() {
 
@@ -181,6 +182,8 @@ function CareersBody() {
                     />
                 ))
             }
+
+            <CallBox />
         </>
     );
 }

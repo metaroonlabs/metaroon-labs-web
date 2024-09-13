@@ -7,6 +7,8 @@ import {AboutUs} from "@/sections/AboutUs.tsx";
 import {Contact} from "@/sections/Contact.tsx";
 import {DevTools} from "@/sections/DevTools.tsx";
 import {FloatingSocialIcons} from "@/components/ui/FloatingSocialIcons.tsx";
+import Blog from "@/sections/Blog.tsx";
+
 
 export function Home() {
     /*const [isLoading, setIsLoading] = useState(true);
@@ -35,6 +37,8 @@ export function Home() {
                     <DevTools/>
                     <div className={"pt-[100px] md:pt-[200px]"}></div>
                     <AboutUs/>
+                    <div className={"pt-[100px] md:pt-[200px]"}></div>
+                    <Blog />
                     <div className={"pt-[100px] md:pt-[200px]"}></div>
                     <div className={"w-full relative"}>
                         <img src="/assets/images/hero/grain-texture.png" alt="grain"
