@@ -9,94 +9,98 @@ import {
     DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu.tsx";
 import {useState} from "react";
+import {useLocation} from "react-router-dom";
 
 export function NavigationBar() {
     const calendlyUrl = 'https://calendly.com/bathiyaw';
     const [isOpen, setIsOpen] = useState(false);
+    const location = useLocation();
 
     return (
         <>
             <NavigationMenu
                 className={"min-w-full h-[80px] backdrop-blur bg-[#131313]/75 flex justify-center px-[25px] lg:px-[100px] fixed top-0 z-50"}>
                 <div className={"w-full flex justify-between 2xl:max-w-[1320px] mx-auto"}>
-                    <Link>
+                    <Link href={"/"}>
                         <img src="/assets/images/logo/logo.png" alt="metaroon-logo"
                              className={"w-[125px] cursor-pointer"}/>
                     </Link>
-                    <div className={"hidden gap-[30px] lg:flex justify-center"}>
-                        <Link href="/#projects">
-                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                Projects
-                            </NavigationMenuLink>
-                        </Link>
-                        <Link href="/#services">
-                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                Services
-                            </NavigationMenuLink>
-                        </Link>
-                        <Link href="/#about">
-                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                About
-                            </NavigationMenuLink>
-                        </Link>
-                        <Link href="/#contact">
-                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                Contact
-                            </NavigationMenuLink>
-                        </Link>
-                        <Link href="/Careers">
-                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                Careers
-                            </NavigationMenuLink>
-                        </Link>
-                    </div>
-                    <Button onClick={() => window.open(calendlyUrl, '_blank')} className={"hidden lg:flex"}>Book a
-                        call <FiChevronRight
-                            size={18}/></Button>
 
-                    <DropdownMenu onOpenChange={setIsOpen}>
-                        <DropdownMenuTrigger asChild>
-                            <Button className="lg:hidden w-[40px] h-[40px]" variant="outline">
-                                <img
-                                    src="/assets/images/menu.png"
-                                    className={`min-w-[18px] menu-icon ${isOpen ? 'rotate-[-45deg]' : 'rotate-0'}`}
-                                    alt="menu-icon"
-                                    style={{transition: 'transform 0.3s'}}
-                                />
-                            </Button>
-                        </DropdownMenuTrigger>
-                        <DropdownMenuContent className="w-56 mr-[25px] bg-white">
-                            <DropdownMenuRadioGroup value={"bottom"} className={"bg-white"}>
-                                <div className={" flex flex-col gap-2 justify-center text-[#131313]"}>
-                                    <Link href="/#projects">
-                                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                            Projects
-                                        </NavigationMenuLink>
-                                    </Link>
-                                    <Link href="/#services">
-                                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                            Services
-                                        </NavigationMenuLink>
-                                    </Link>
-                                    <Link href="/#about">
-                                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                            About
-                                        </NavigationMenuLink>
-                                    </Link>
-                                    <Link href="/#contact">
-                                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                            Contact
-                                        </NavigationMenuLink>
-                                    </Link>
-                                    <Link href="/Careers">
-                                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                            Careers
-                                        </NavigationMenuLink>
-                                    </Link>
-                                </div>
-                            </DropdownMenuRadioGroup>
-                        </DropdownMenuContent>
-                    </DropdownMenu>
+                    {location.pathname !== "/hello" && <>
+                        <div className={"hidden gap-[30px] lg:flex justify-center"}>
+                            <Link href="/#projects">
+                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                    Projects
+                                </NavigationMenuLink>
+                            </Link>
+                            <Link href="/#services">
+                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                    Services
+                                </NavigationMenuLink>
+                            </Link>
+                            <Link href="/#about">
+                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                    About
+                                </NavigationMenuLink>
+                            </Link>
+                            <Link href="/#contact">
+                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                    Contact
+                                </NavigationMenuLink>
+                            </Link>
+                            <Link href="/Careers">
+                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                    Careers
+                                </NavigationMenuLink>
+                            </Link>
+                        </div>
+                        <Button onClick={() => window.open(calendlyUrl, '_blank')} className={"hidden lg:flex"}>Book a
+                            call <FiChevronRight
+                                size={18}/></Button>
+                        <DropdownMenu onOpenChange={setIsOpen}>
+                            <DropdownMenuTrigger asChild>
+                                <Button className="lg:hidden w-[40px] h-[40px]" variant="outline">
+                                    <img
+                                        src="/assets/images/menu.png"
+                                        className={`min-w-[18px] menu-icon ${isOpen ? 'rotate-[-45deg]' : 'rotate-0'}`}
+                                        alt="menu-icon"
+                                        style={{transition: 'transform 0.3s'}}
+                                    />
+                                </Button>
+                            </DropdownMenuTrigger>
+                            <DropdownMenuContent className="w-56 mr-[25px] bg-white">
+                                <DropdownMenuRadioGroup value={"bottom"} className={"bg-white"}>
+                                    <div className={" flex flex-col gap-2 justify-center text-[#131313]"}>
+                                        <Link href="/#projects">
+                                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                                Projects
+                                            </NavigationMenuLink>
+                                        </Link>
+                                        <Link href="/#services">
+                                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                                Services
+                                            </NavigationMenuLink>
+                                        </Link>
+                                        <Link href="/#about">
+                                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                                About
+                                            </NavigationMenuLink>
+                                        </Link>
+                                        <Link href="/#contact">
+                                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                                Contact
+                                            </NavigationMenuLink>
+                                        </Link>
+                                    </div>
+                                </DropdownMenuRadioGroup>
+                            </DropdownMenuContent>
+                        </DropdownMenu>
+                    </>}
+
+
+
+
+
                 </div>
                 {/*<Sheet>
                     <SheetTrigger asChild>

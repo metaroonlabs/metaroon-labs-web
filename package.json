@@ -1,7 +1,7 @@
 {
   "name": "metaroon-labs-web",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -26,7 +26,8 @@
     "react-router-dom": "^6.22.3",
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7",
-    "three": "^0.164.1"
+    "three": "^0.164.1",
+    "vite-plugin-rewrite-all": "^1.0.2"
   },
   "devDependencies": {
     "@types/node": "^20.12.2",
