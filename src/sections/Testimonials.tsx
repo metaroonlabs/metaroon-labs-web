@@ -21,7 +21,11 @@ export function Testimonials() {
                         <TestimonialCard
                             testimonial={"“Metarune labs is a needle in a haystack, very often people find themselves disappointed with an outsourced dev team but this isn’t the case with Metarune. Their team is brilliant, kind and easy to work with.”"}
                             username={"Adin Zweigbaum"} designation={"Chief Innovation Officer - Wisdom Gaming"}
-                            imgUrl={"/assets/images/testimonials/wisdom.png"} largeCard={true}/>
+                            imgUrl={"/assets/images/testimonials/wisdom.png"}/>
+                        <TestimonialCard
+                            testimonial={"“We’ve had the pleasure of working with Metaroon Labs on three projects for our startup, and we couldn’t be more satisfied. Their expertise in tech development is impressive, as they handle every challenge seamlessly and frequently exceed our expectations. What we particularly appreciate is their ability to stay within budget while delivering outstanding results. Their communication is exceptional, providing detailed project reviews and timely updates throughout the process. As a business owner, nothing could be more important than great communication from the dev team”"}
+                            username={"Muray Scarce"} designation={"Co-founder - Wandrlust by Critterpedia Pty Ltd"}
+                            imgUrl={"/assets/images/testimonials/wandrlust.png"}/>
                     </div>
                     <div className="w-full xl:w-[50%] flex flex-col gap-5 justify-between">
                         <TestimonialCard
@@ -32,6 +36,10 @@ export function Testimonials() {
                             testimonial={"“Metarune Labs has been instrumental in developing the WandrLust Mobile Application and Ordinals Collection. Their exceptional technical expertise and dedication truly set them apart as an amazing team.”"}
                             username={"Nic Scarce"} designation={"Co-founder - Wandrlust by Critterpedia Pty Ltd"}
                             imgUrl={"/assets/images/testimonials/wandrlust.png"}/>
+                        <TestimonialCard
+                            testimonial={"“Metarune Labs has excelled in developing cutting-edge web3 technology and crafting an engaging website within an exceptionally tight timeline. Their remarkable self-motivation, responsiveness, professionalism, and ease of collaboration made working with them an absolute pleasure.”"}
+                            username={"Cooper Kerns"} designation={"Project Manager/Advisor - BeatFarm"}
+                            imgUrl={"/assets/images/testimonials/beatfarm.png"}/>
                     </div>
                 </div>
             </div>
