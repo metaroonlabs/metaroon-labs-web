@@ -1,6 +1,7 @@
 import {FiChevronDown, FiChevronRight, FiChevronUp} from "react-icons/fi";
 import {Button} from "@/components/ui/button.tsx";
 import {useState} from "react";
+import Application from "@/components/careers/Application.tsx";
 
 type JobCardProps = {
     title: string,
@@ -80,7 +81,7 @@ function JobCard({
                                             onClick={() => setActiveTab(tab.name)}
                                             className={`cursor-pointer py-2 ${index === 0 ? 'pl-0' : 'px-4'} font-[16px] leading-[16px] transition ease-in-out ${
                                                 activeTab === tab.name
-                                                    ? 'text-white underline decoration-2 underline-offset-[16px] font-bold'
+                                                    ? 'text-white underline decoration-1 underline-offset-[16px] font-bold'
                                                     : 'text-[#C1C1C1] font-normal'
                                             }`}
                                         >
@@ -94,46 +95,54 @@ function JobCard({
                                 <div className="w-[1056px] border-t border-[#212121] mt-[6px]"></div>
                             </div>
 
-                            <div className="mt-[40px]">
-                                <h3 className="text-xl font-bold mb-6">{heading1}</h3>
-                                <p className="mb-4 text-[#C1C1C1] text-[16px] font-light">
-                                    {description1}
-                                </p>
-                            </div>
+                            {activeTab === "Overview" ? (
+                                <>
+                                    <div className="mt-[40px]">
+                                        <h3 className="text-xl font-bold mb-6">{heading1}</h3>
+                                        <p className="mb-4 text-[#C1C1C1] text-[16px] font-light">
+                                            {description1}
+                                        </p>
+                                    </div>
 
-                            <div className="mt-[40px]">
-                                <h3 className="text-xl font-bold mb-6">{heading2}</h3>
-                                <p className="mb-4 text-[#C1C1C1] text-[16px] font-light">
-                                    {description2}
-                                </p>
-                                <p className="mb-4 text-[#C1C1C1] text-[16px] font-light">
-                                    {description3}
-                                </p>
-                            </div>
+                                    <div className="mt-[40px]">
+                                        <h3 className="text-xl font-bold mb-6">{heading2}</h3>
+                                        <p className="mb-4 text-[#C1C1C1] text-[16px] font-light">
+                                            {description2}
+                                        </p>
+                                        <p className="mb-4 text-[#C1C1C1] text-[16px] font-light">
+                                            {description3}
+                                        </p>
+                                    </div>
 
-                            <div className="mt-[40px]">
-                                <h3 className="text-xl font-bold mb-6">{heading3}</h3>
-                                <ul className="list-disc list-inside space-y-2">
-                                    {responsibilities.map((responsibility, index) => (
-                                        <li key={index} className="text-[#C1C1C1] text-[16px] font-light">
-                                            {responsibility}
-                                        </li>
-                                    ))}
+                                    <div className="mt-[40px]">
+                                        <h3 className="text-xl font-bold mb-6">{heading3}</h3>
+                                        <ul className="list-disc list-inside space-y-2">
+                                            {responsibilities.map((responsibility, index) => (
+                                                <li key={index} className="text-[#C1C1C1] text-[16px] font-light">
+                                                    {responsibility}
+                                                </li>
+                                            ))}
 
-                                </ul>
-                            </div>
+                                        </ul>
+                                    </div>
 
-                            <div className="mt-[40px]">
-                                <h3 className="text-xl font-bold mb-6">{heading4}</h3>
-                                <ul className="list-disc list-inside space-y-2">
-                                    {requirements.map((requirement: any) => (
-                                    <li>
-                                        <strong className="text-white text-[16px] font-bold">{requirement.requirementsTitle}:  </strong>
-                                        <span className="text-[#C1C1C1] text-[16px] font-light">{requirement.requirementDescription}</span>
-                                    </li>
-                                    ))}
-                                </ul>
-                            </div>
+                                    <div className="mt-[40px]">
+                                        <h3 className="text-xl font-bold mb-6">{heading4}</h3>
+                                        <ul className="list-disc list-inside space-y-2">
+                                            {requirements.map((requirement: any) => (
+                                                <li>
+                                                    <strong
+                                                        className="text-white text-[16px] font-bold">{requirement.requirementsTitle}: </strong>
+                                                    <span
+                                                        className="text-[#C1C1C1] text-[16px] font-light">{requirement.requirementDescription}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </>
+                            ): (
+                                <Application />
+                            )}
                         </>
                     )}
 
