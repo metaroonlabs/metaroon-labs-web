@@ -31,43 +31,89 @@ function Application() {
                         type="text"
                         id="firstName"
                         name="firstName"
-                        className="p-2 border border-[#404040] rounded-[5px] font-normal placeholder:text-sm"
+                        className="p-2 border border-[#404040] rounded-[5px] font-normal placeholder:text-sm focus:outline-none focus:border-[#404040]"
                         placeholder="Your first name"
                     />
                 </div>
 
                 <div className="flex flex-col">
-                    <label htmlFor="firstName" className="mb-2 text-sm font-normal text-white">Last Name</label>
+                    <label htmlFor="lastName" className="mb-2 text-sm font-normal text-white">Last Name</label>
                     <input
                         type="text"
-                        id="firstName"
-                        name="firstName"
-                        className="p-2 border border-[#404040] rounded-[5px] font-normal placeholder:text-sm"
+                        id="lastName"
+                        name="lastName"
+                        className="p-2 border border-[#404040] rounded-[5px] font-normal placeholder:text-sm focus:outline-none focus:border-[#404040]"
                         placeholder="Your last name"
                     />
                 </div>
 
                 <div className="flex flex-col">
-                    <label htmlFor="firstName" className="mb-2 text-sm font-normal text-white">Email</label>
+                    <label htmlFor="email" className="mb-2 text-sm font-normal text-white">Email</label>
                     <input
                         type="text"
-                        id="firstName"
-                        name="firstName"
-                        className="p-2 border border-[#404040] rounded-[5px] font-normal placeholder:text-sm"
+                        id="email"
+                        name="email"
+                        className="p-2 border border-[#404040] rounded-[5px] font-normal placeholder:text-sm focus:outline-none focus:border-[#404040]"
                         placeholder="hello@example.com"
                     />
                 </div>
 
                 <div className="flex flex-col">
-                    <label htmlFor="firstName" className="mb-2 text-sm font-normal text-white">Contact Number</label>
+                    <label htmlFor="contactnumber" className="mb-2 text-sm font-normal text-white">Contact
+                        Number</label>
                     <input
                         type="text"
-                        id="firstName"
-                        name="firstName"
-                        className="p-2 border border-[#404040] rounded-[5px] font-normal placeholder:text-sm"
+                        id="contactnumber"
+                        name="contactnumber"
+                        className="p-2 border border-[#404040] rounded-[5px] font-normal placeholder:text-sm focus:outline-none focus:border-[#404040]"
                         placeholder="Your contact number"
                     />
                 </div>
+
+                <div className="flex flex-col">
+                    <label htmlFor="portfoliolink" className="mb-2 text-sm font-normal text-white">Portfolio
+                        Link</label>
+                    <input
+                        type="text"
+                        id="portfoliolink"
+                        name="portfoliolink"
+                        className="p-2 border border-[#404040] rounded-[5px] font-normal placeholder:text-sm focus:outline-none focus:border-[#404040]"
+                        placeholder="Your Portfolio Link"
+                    />
+                </div>
+
+                <div className="flex flex-col">
+                    <label htmlFor="expectedSalary" className="mb-2 text-sm font-normal text-white">Expected
+                        Salary</label>
+                    <div className="relative ">
+                        <div
+                            className="absolute inset-y-0 left-0 flex items-center bg-[#131313] border border-[#404040] rounded-[5px] rounded-tr-none rounded-br-none">
+                            <select id="currency" name="currency"
+                                    className="h-full rounded-md border-0 py-0 pl-2 pr-3 text-white text-sm">
+                                <option>LKR</option>
+                                <option>USD</option>
+                            </select>
+                        </div>
+                        <input type="text" name="price" id="price"
+                               className="w-full p-2 pl-20 placeholder:text-sm border border-[#404040] rounded-[5px] focus:outline-none focus:border-[#404040]"
+                               placeholder="0.00"
+                        />
+                    </div>
+                </div>
+
+                <div className="flex flex-col md:col-span-2">
+                    <label htmlFor="yearsofexperience" className="mb-2 text-sm font-normal text-white">Years of
+                        Experience</label>
+                    <input
+                        type="text"
+                        id="yearsofexperience"
+                        name="yearsofexperience"
+                        className="p-2 border border-[#404040] rounded-[5px] font-normal placeholder:text-sm focus:outline-none focus:border-[#404040]"
+                        placeholder="Type here..."
+                    />
+                </div>
+
+
             </div>
         </div>
 
