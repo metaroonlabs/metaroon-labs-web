@@ -3,20 +3,31 @@ import {Button} from "@/components/ui/button.tsx";
 import {useState} from "react";
 import Application from "@/components/careers/Application.tsx";
 
+type Badge = {
+    icon: JSX.Element,
+    title: string
+};
+
+type Requirement = {
+    requirementsTitle: string,
+    requirementDescription: string
+};
+
 type JobCardProps = {
-    title: string,
-    description: string,
-    badges: object[],
-    heading1: string,
-    description1: string,
-    heading2: string,
-    description2: string,
-    description3: string,
-    heading3: string,
-    responsibilities: string[],
-    heading4: string
-    requirements: object[]
-}
+    title: string;
+    description: string;
+    badges: Badge[];
+    heading1: string;
+    description1: string;
+    heading2: string;
+    description2: string;
+    description3: string;
+    heading3: string;
+    responsibilities: string[];
+    heading4: string;
+    requirements: Requirement[];
+};
+
 function JobCard({
                      title,
                      description,
@@ -52,7 +63,7 @@ function JobCard({
                     </div>
 
                     <div className="flex flex-wrap items-center gap-[10px] mx-auto mb-[30px]">
-                        {badges.map((badge: any) => (
+                        {badges.map((badge: Badge) => (
                             <div
                                 className="flex items-center bg-[#1B1B1B] text-[#DAFF00] px-[14px] py-[7px] rounded-[38px] w-[127px] h-[34px] space-x-[6px]">
 
@@ -129,7 +140,7 @@ function JobCard({
                                     <div className="mt-[40px]">
                                         <h3 className="text-xl font-bold mb-6">{heading4}</h3>
                                         <ul className="list-disc list-inside space-y-2">
-                                            {requirements.map((requirement: any) => (
+                                            {requirements.map((requirement: Requirement) => (
                                                 <li>
                                                     <strong
                                                         className="text-white text-[16px] font-bold">{requirement.requirementsTitle}: </strong>
