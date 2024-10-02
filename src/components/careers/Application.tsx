@@ -1,5 +1,6 @@
-import {FiArrowUpCircle, FiPaperclip} from 'react-icons/fi';
+import {FiArrowUpCircle} from 'react-icons/fi';
 import {Button} from "@/components/ui/button.tsx";
+import {FaWandMagic} from "react-icons/fa6";
 
 function Application() {
     return (
@@ -7,7 +8,7 @@ function Application() {
             <div className="border border-[#404040] p-6 rounded-lg flex flex-col md:flex-row">
                 <div className="flex flex-col justify-between mb-4 md:mb-0 md:mr-6">
                     <div className="flex items-center">
-                        <FiPaperclip className="text-[#DAFF00] size={24px} mr-2"/>
+                        <FaWandMagic className="text-[#DAFF00] size={24px} mr-2"/>
                         <h2 className="text-lg font-semibold">Autofill from Resume</h2>
                     </div>
                     <p className="text-white mt-2 text-sm font-normal">
@@ -59,24 +60,24 @@ function Application() {
                 </div>
 
                 <div className="flex flex-col">
-                    <label htmlFor="contactnumber" className="mb-2 text-sm font-normal text-white">Contact
+                    <label htmlFor="contactNumber" className="mb-2 text-sm font-normal text-white">Contact
                         Number</label>
                     <input
                         type="text"
-                        id="contactnumber"
-                        name="contactnumber"
+                        id="contactNumber"
+                        name="contactNumber"
                         className="p-2 border border-[#404040] rounded-[5px] font-normal placeholder:text-sm focus:outline-none focus:border-[#404040]"
                         placeholder="Your contact number"
                     />
                 </div>
 
                 <div className="flex flex-col">
-                    <label htmlFor="portfoliolink" className="mb-2 text-sm font-normal text-white">Portfolio
+                    <label htmlFor="portfolioLink" className="mb-2 text-sm font-normal text-white">Portfolio
                         Link</label>
                     <input
                         type="text"
-                        id="portfoliolink"
-                        name="portfoliolink"
+                        id="portfolioLink"
+                        name="portfolioLink"
                         className="p-2 border border-[#404040] rounded-[5px] font-normal placeholder:text-sm focus:outline-none focus:border-[#404040]"
                         placeholder="Your Portfolio Link"
                     />
@@ -87,7 +88,7 @@ function Application() {
                         Salary</label>
                     <div className="relative ">
                         <div
-                            className="absolute inset-y-0 left-0 flex items-center bg-[#131313] border border-[#404040] rounded-[5px] rounded-tr-none rounded-br-none">
+                            className="absolute inset-y-0 left-0 pr-1 flex items-center bg-[#131313] border border-[#404040] rounded-[5px] rounded-tr-none rounded-br-none">
                             <select id="currency" name="currency"
                                     className="h-full rounded-md border-0 py-0 pl-2 pr-3 text-white text-sm">
                                 <option>LKR</option>
@@ -95,24 +96,149 @@ function Application() {
                             </select>
                         </div>
                         <input type="text" name="price" id="price"
-                               className="w-full p-2 pl-20 placeholder:text-sm border border-[#404040] rounded-[5px] focus:outline-none focus:border-[#404040]"
+                               className="w-full p-2 pl-24 placeholder:text-sm border border-[#404040] rounded-[5px] focus:outline-none focus:border-[#404040]"
                                placeholder="0.00"
                         />
                     </div>
                 </div>
 
                 <div className="flex flex-col md:col-span-2">
-                    <label htmlFor="yearsofexperience" className="mb-2 text-sm font-normal text-white">Years of
+                    <label htmlFor="yearsofExperience" className="mb-2 text-sm font-normal text-white">Years of
                         Experience</label>
                     <input
                         type="text"
-                        id="yearsofexperience"
-                        name="yearsofexperience"
+                        id="yearsofExperience"
+                        name="yearsofExperience"
                         className="p-2 border border-[#404040] rounded-[5px] font-normal placeholder:text-sm focus:outline-none focus:border-[#404040]"
                         placeholder="Type here..."
                     />
                 </div>
 
+                <div className="flex flex-col md:col-span-2">
+                    <label htmlFor="resumeUpload" className="mb-2 text-sm font-normal text-white">
+                        Upload Resume
+                    </label>
+                    <div
+                        className="relative w-full border border-dashed border-[#404040] rounded-[5px] p-6 text-center h-40 bg-[#151515]">
+                        <div className="absolute inset-0 flex flex-col justify-center items-center space-y-2">
+                            <div className="bg-black p-3 rounded-full">
+                                <FiArrowUpCircle size={24}/>
+                            </div>
+
+                            <p className="text-sm font-normal">
+                                <span className="text-[#DAFF00]">Upload a file</span>
+                                <span className="text-white"> or drag and drop here</span>
+                            </p>
+
+                        </div>
+
+                        <input
+                            type="file"
+                            id="resumeUpload"
+                            name="resumeUpload"
+                            className="opacity-0 w-full h-full absolute inset-0 cursor-pointer"
+                        />
+                    </div>
+                </div>
+
+                <div className="flex flex-col md:col-span-2">
+                    <label htmlFor="coverLetterUpload" className="mb-2 text-sm font-normal text-white">
+                        Upload Cover Letter
+                    </label>
+                    <div
+                        className="relative w-full border border-dashed border-[#404040] rounded-[5px] p-6 text-center h-40 bg-[#151515]">
+                        <div className="absolute inset-0 flex flex-col justify-center items-center space-y-2">
+                            <div className="bg-black p-3 rounded-full">
+                                <FiArrowUpCircle size={24}/>
+                            </div>
+
+                            <p className="text-sm font-normal">
+                                <span className="text-[#DAFF00]">Upload a file</span>
+                                <span className="text-white"> or drag and drop here</span>
+                            </p>
+
+                        </div>
+
+                        <input
+                            type="file"
+                            id="coverLetterUpload"
+                            name="coverLetterUpload"
+                            className="opacity-0 w-full h-full absolute inset-0 cursor-pointer"
+                        />
+                    </div>
+                </div>
+
+                <div className="flex flex-col md:col-span-2">
+                    <label htmlFor="employmentType" className="mb-2 text-sm font-normal text-white">
+                        What is your preferred employment type?
+                    </label>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div className="flex items-center border border-[#404040] rounded-[5px] p-2">
+                            <input
+                                type="radio"
+                                name="employmentType"
+                                value="full-time"
+                                className="form-radio bg-[#DAFF00]"
+                            />
+                            <span className="ml-2 text-white text-sm font-normal">Full Time</span>
+                        </div>
+                        <div className="flex items-center border border-[#404040] rounded-[5px] p-2">
+                            <input
+                                type="radio"
+                                name="employmentType"
+                                value="full-time"
+                                className="form-radio bg-[#DAFF00]"
+                            />
+                            <span className="ml-2 text-white text-sm font-normal">Part Time</span>
+                        </div>
+                        <div className="flex items-center border border-[#404040] rounded-[5px] p-2">
+                            <input
+                                type="radio"
+                                name="employmentType"
+                                value="full-time"
+                                className="form-radio bg-[#DAFF00]"
+                            />
+                            <span className="ml-2 text-white text-sm font-normal">Hourly / Contract basis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="flex flex-col md:col-span-2">
+                    <label htmlFor="employmentType" className="mb-2 text-sm font-normal text-white">
+                        Do any of these job types apply?
+                    </label>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div className="flex items-center border border-[#404040] rounded-[5px] p-2">
+                            <input
+                                type="radio"
+                                name="employmentType"
+                                value="full-time"
+                                className="form-radio bg-[#DAFF00]"
+                            />
+                            <span className="ml-2 text-white text-sm font-normal">Contract</span>
+                        </div>
+                        <div className="flex items-center border border-[#404040] rounded-[5px] p-2">
+                            <input
+                                type="radio"
+                                name="employmentType"
+                                value="full-time"
+                                className="form-radio bg-[#DAFF00]"
+                            />
+                            <span className="ml-2 text-white text-sm font-normal">Temporary</span>
+                        </div>
+                        <div className="flex items-center border border-[#404040] rounded-[5px] p-2">
+                            <input
+                                type="radio"
+                                name="employmentType"
+                                value="full-time"
+                                className="form-radio bg-[#DAFF00]"
+                            />
+                            <span className="ml-2 text-white text-sm font-normal">Internship</span>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
