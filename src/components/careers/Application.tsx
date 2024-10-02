@@ -1,6 +1,7 @@
-import {FiArrowUpCircle} from 'react-icons/fi';
 import {Button} from "@/components/ui/button.tsx";
-import {FaWandMagic} from "react-icons/fa6";
+import uploadIcon from '../../../public/assets/images/careers/Icon.png'
+import magicWand from '../../../public/assets/images/careers/magicWand.png'
+import blackArrow from '../../../public/assets/images/careers/blackArrow.png'
 
 function Application() {
     return (
@@ -8,7 +9,11 @@ function Application() {
             <div className="border border-[#404040] p-6 rounded-lg flex flex-col md:flex-row">
                 <div className="flex flex-col justify-between mb-4 md:mb-0 md:mr-6">
                     <div className="flex items-center">
-                        <FaWandMagic className="text-[#DAFF00] size={24px} mr-2"/>
+                        <img
+                            src={magicWand} // Replace with the actual path to your image
+                            alt="Magic Wand"
+                            className="w-6 h-6 mr-2" // Adjust width and height as needed
+                        />
                         <h2 className="text-lg font-semibold">Autofill from Resume</h2>
                     </div>
                     <p className="text-white mt-2 text-sm font-normal">
@@ -17,7 +22,13 @@ function Application() {
                 </div>
 
                 <div className="flex md:ml-auto items-center">
-                    <Button className={"lg:flex gap-1"}>Upload File <FiArrowUpCircle size={18}/></Button>
+                    <Button className={"lg:flex gap-1"}>Upload File
+                        <img
+                            src={blackArrow}
+                            alt="Upload Arrow"
+                            className="w-4 h-4"
+                        />
+                    </Button>
                 </div>
             </div>
 
@@ -27,7 +38,9 @@ function Application() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-5">
                 <div className="flex flex-col">
-                    <label htmlFor="firstName" className="mb-2 text-sm font-normal text-white">First Name</label>
+                    <label htmlFor="firstName" className="mb-2 text-sm font-normal text-white">First Name
+                        <span className='text-[#FF3939] ml-1'>*</span>
+                    </label>
                     <input
                         type="text"
                         id="firstName"
@@ -38,7 +51,9 @@ function Application() {
                 </div>
 
                 <div className="flex flex-col">
-                    <label htmlFor="lastName" className="mb-2 text-sm font-normal text-white">Last Name</label>
+                    <label htmlFor="lastName" className="mb-2 text-sm font-normal text-white">Last Name
+                        <span className='text-[#FF3939] ml-1'>*</span>
+                    </label>
                     <input
                         type="text"
                         id="lastName"
@@ -49,7 +64,9 @@ function Application() {
                 </div>
 
                 <div className="flex flex-col">
-                    <label htmlFor="email" className="mb-2 text-sm font-normal text-white">Email</label>
+                    <label htmlFor="email" className="mb-2 text-sm font-normal text-white">Email
+                        <span className='text-[#FF3939] ml-1'>*</span>
+                    </label>
                     <input
                         type="text"
                         id="email"
@@ -60,8 +77,9 @@ function Application() {
                 </div>
 
                 <div className="flex flex-col">
-                    <label htmlFor="contactNumber" className="mb-2 text-sm font-normal text-white">Contact
-                        Number</label>
+                    <label htmlFor="contactNumber" className="mb-2 text-sm font-normal text-white">Contact Number
+                        <span className='text-[#FF3939] ml-1'>*</span>
+                    </label>
                     <input
                         type="text"
                         id="contactNumber"
@@ -72,8 +90,9 @@ function Application() {
                 </div>
 
                 <div className="flex flex-col">
-                    <label htmlFor="portfolioLink" className="mb-2 text-sm font-normal text-white">Portfolio
-                        Link</label>
+                    <label htmlFor="portfolioLink" className="mb-2 text-sm font-normal text-white">Portfolio Link
+                        <span className='text-[#FF3939] ml-1'>*</span>
+                    </label>
                     <input
                         type="text"
                         id="portfolioLink"
@@ -84,8 +103,9 @@ function Application() {
                 </div>
 
                 <div className="flex flex-col">
-                    <label htmlFor="expectedSalary" className="mb-2 text-sm font-normal text-white">Expected
-                        Salary</label>
+                    <label htmlFor="expectedSalary" className="mb-2 text-sm font-normal text-white">Expected Salary
+                        <span className='text-[#FF3939] ml-1'>*</span>
+                    </label>
                     <div className="relative ">
                         <div
                             className="absolute inset-y-0 left-0 pr-1 flex items-center bg-[#131313] border border-[#404040] rounded-[5px] rounded-tr-none rounded-br-none">
@@ -104,7 +124,9 @@ function Application() {
 
                 <div className="flex flex-col md:col-span-2">
                     <label htmlFor="yearsofExperience" className="mb-2 text-sm font-normal text-white">Years of
-                        Experience</label>
+                        Experience
+                        <span className='text-[#FF3939] ml-1'>*</span>
+                    </label>
                     <input
                         type="text"
                         id="yearsofExperience"
@@ -115,14 +137,18 @@ function Application() {
                 </div>
 
                 <div className="flex flex-col md:col-span-2">
-                    <label htmlFor="resumeUpload" className="mb-2 text-sm font-normal text-white">
-                        Upload Resume
+                    <label htmlFor="resumeUpload" className="mb-2 text-sm font-normal text-white">Upload Resume
+                        <span className='text-[#FF3939] ml-1'>*</span>
                     </label>
                     <div
                         className="relative w-full border border-dashed border-[#404040] rounded-[5px] p-6 text-center h-40 bg-[#151515]">
                         <div className="absolute inset-0 flex flex-col justify-center items-center space-y-2">
-                            <div className="bg-black p-3 rounded-full">
-                                <FiArrowUpCircle size={24}/>
+                            <div className="bg-[rgba(218,255,0,0.06)] p-3 rounded-full">
+                                <img
+                                    src={uploadIcon}
+                                    alt="Upload Arrow"
+                                    className="w-6 h-6"
+                                />
                             </div>
 
                             <p className="text-sm font-normal">
@@ -142,14 +168,19 @@ function Application() {
                 </div>
 
                 <div className="flex flex-col md:col-span-2">
-                    <label htmlFor="coverLetterUpload" className="mb-2 text-sm font-normal text-white">
-                        Upload Cover Letter
+                    <label htmlFor="coverLetterUpload" className="mb-2 text-sm font-normal text-white">Upload Cover
+                        Letter
+                        <span className='text-[#FF3939] ml-1'>*</span>
                     </label>
                     <div
                         className="relative w-full border border-dashed border-[#404040] rounded-[5px] p-6 text-center h-40 bg-[#151515]">
                         <div className="absolute inset-0 flex flex-col justify-center items-center space-y-2">
-                            <div className="bg-black p-3 rounded-full">
-                                <FiArrowUpCircle size={24}/>
+                            <div className="bg-[rgba(218,255,0,0.06)] p-3 rounded-full">
+                                <img
+                                    src={uploadIcon}
+                                    alt="Upload Arrow"
+                                    className="w-6 h-6"
+                                />
                             </div>
 
                             <p className="text-sm font-normal">
@@ -171,6 +202,7 @@ function Application() {
                 <div className="flex flex-col md:col-span-2">
                     <label htmlFor="employmentType" className="mb-2 text-sm font-normal text-white">
                         What is your preferred employment type?
+                        <span className='text-[#FF3939] ml-1'>*</span>
                     </label>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -207,6 +239,7 @@ function Application() {
                 <div className="flex flex-col md:col-span-2">
                     <label htmlFor="employmentType" className="mb-2 text-sm font-normal text-white">
                         Do any of these job types apply?
+                        <span className='text-[#FF3939] ml-1'>*</span>
                     </label>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -238,6 +271,20 @@ function Application() {
                             <span className="ml-2 text-white text-sm font-normal">Internship</span>
                         </div>
                     </div>
+                </div>
+
+                <div className="flex flex-col md:col-span-2">
+                    <label htmlFor="startDate" className="mb-2 text-sm font-normal text-white">
+                        When would you be available to start upon receiving an offer?
+                        <span className='text-[#FF3939] ml-1'>*</span>
+                    </label>
+                    <input
+                        type="text"
+                        id="startDate"
+                        name="startDate"
+                        className="p-2 border border-[#404040] rounded-[5px] font-normal placeholder:text-sm focus:outline-none focus:border-[#404040]"
+                        placeholder="Type here..."
+                    />
                 </div>
 
             </div>
