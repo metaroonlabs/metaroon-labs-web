@@ -57,7 +57,7 @@ function JobCard({
             <div className="max-w-[350px] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[950px] xl:max-w-[1240px] mx-auto p-[2px] rounded-[10px] bg-gradient-to-br from-[#9D9D9D] via-[#202020] to-[#202020] mt-[60px]">
                 <div className="bg-[#131313] rounded-[10px] py-[35px] px-[30px] md:py-[40px] md:px-[70px] lg:py-[50px] lg:px-[90px]">
                     <div className="md:flex justify-between items-start w-[340px] md:w-[550px] lg:w-[765px] xl:w-[1060px] mx-auto mb-6 md:mb-0">
-                        <h2 className="text-[25px] md:text-[30px] font-bold leading-[30px] mb-[30px]">{title}</h2>
+                        <h2 className="text-[25px] md:text-[30px] font-bold leading-[30px] mb-[30px] w-[90%] sm:w-full">{title}</h2>
                         <Button className={"lg:flex"}>Apply Now <FiChevronRight size={18}/>
                         </Button>
                     </div>

@@ -26,7 +26,7 @@ function TabBar() {
                             onClick={() => setActiveTab(tab.name)}
                             className={`cursor-pointer text-center py-2 px-4 font-[16px] leading-[16px] transition ease-in-out ${
                                 activeTab === tab.name
-                                    ? 'text-white underline decoration-2 underline-offset-[16px] font-bold'
+                                    ? 'text-white underline decoration-2 underline-offset-[31px] sm:underline-offset-[16px] font-bold'
                                     : 'text-[#C1C1C1] font-normal'
                             }`}
                         >

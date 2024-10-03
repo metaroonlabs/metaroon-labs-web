@@ -2,6 +2,7 @@ import {Button} from "@/components/ui/button.tsx";
 import uploadIcon from '../../../public/assets/images/careers/Icon.png'
 import magicWand from '../../../public/assets/images/careers/magicWand.png'
 import blackArrow from '../../../public/assets/images/careers/blackArrow.png'
+import sendArrow from '../../../public/assets/images/careers/submitArrow.png'
 
 function Application() {
     return (
@@ -276,7 +277,6 @@ function Application() {
                 <div className="flex flex-col md:col-span-2">
                     <label htmlFor="startDate" className="mb-2 text-sm font-normal text-white">
                         When would you be available to start upon receiving an offer?
-                        <span className='text-[#FF3939] ml-1'>*</span>
                     </label>
                     <input
                         type="text"
@@ -285,6 +285,29 @@ function Application() {
                         className="p-2 border border-[#404040] rounded-[5px] font-normal placeholder:text-sm focus:outline-none focus:border-[#404040]"
                         placeholder="Type here..."
                     />
+                </div>
+
+                <div className="flex flex-col md:col-span-2">
+                    <label htmlFor="jobReferralSource" className="mb-2 text-sm font-normal text-white">
+                        How did you hear about this job posting?
+                    </label>
+                    <input
+                        type="text"
+                        id="jobReferralSource"
+                        name="jobReferralSource"
+                        className="p-2 border border-[#404040] rounded-[5px] font-normal placeholder:text-sm focus:outline-none focus:border-[#404040]"
+                        placeholder="Type here..."
+                    />
+                </div>
+
+                <div className="flex flex-col md:col-span-2">
+                    <Button className={"lg:flex gap-1"}>Submit Application
+                        <img
+                            src={sendArrow}
+                            alt="Submit Arrow"
+                            className="w-4 h-4"
+                        />
+                    </Button>
                 </div>
 
             </div>
