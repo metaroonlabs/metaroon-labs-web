@@ -111,7 +111,7 @@ function Application() {
                         <div
                             className="absolute inset-y-0 left-0 pr-1 flex items-center bg-[#131313] border border-[#404040] rounded-[5px] rounded-tr-none rounded-br-none">
                             <select id="currency" name="currency"
-                                    className="h-full rounded-md border-0 py-0 pl-2 pr-3 text-white text-sm">
+                                    className="h-full rounded-md border-0 py-0 pl-2 pr-3 text-white text-sm focus:outline-none focus:border-[#404040]">
                                 <option>LKR</option>
                                 <option>USD</option>
                             </select>
