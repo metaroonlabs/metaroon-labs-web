@@ -212,7 +212,7 @@ function Application() {
                                 type="radio"
                                 name="employmentType"
                                 value="full-time"
-                                className="form-radio bg-[#DAFF00]"
+                                className="form-radio accent-[#DAFF00]"
                             />
                             <span className="ml-2 text-white text-sm font-normal">Full Time</span>
                         </div>
@@ -221,7 +221,7 @@ function Application() {
                                 type="radio"
                                 name="employmentType"
                                 value="full-time"
-                                className="form-radio bg-[#DAFF00]"
+                                className="form-radio accent-[#DAFF00]"
                             />
                             <span className="ml-2 text-white text-sm font-normal">Part Time</span>
                         </div>
@@ -230,7 +230,7 @@ function Application() {
                                 type="radio"
                                 name="employmentType"
                                 value="full-time"
-                                className="form-radio bg-[#DAFF00]"
+                                className="form-radio accent-[#DAFF00]"
                             />
                             <span className="ml-2 text-white text-sm font-normal">Hourly / Contract basis</span>
                         </div>
@@ -249,7 +249,7 @@ function Application() {
                                 type="radio"
                                 name="employmentType"
                                 value="full-time"
-                                className="form-radio bg-[#DAFF00]"
+                                className="form-radio accent-[#DAFF00]"
                             />
                             <span className="ml-2 text-white text-sm font-normal">Contract</span>
                         </div>
@@ -258,7 +258,7 @@ function Application() {
                                 type="radio"
                                 name="employmentType"
                                 value="full-time"
-                                className="form-radio bg-[#DAFF00]"
+                                className="form-radio accent-[#DAFF00]"
                             />
                             <span className="ml-2 text-white text-sm font-normal">Temporary</span>
                         </div>
@@ -267,7 +267,7 @@ function Application() {
                                 type="radio"
                                 name="employmentType"
                                 value="full-time"
-                                className="form-radio bg-[#DAFF00]"
+                                className="form-radio accent-[#DAFF00]"
                             />
                             <span className="ml-2 text-white text-sm font-normal">Internship</span>
                         </div>
